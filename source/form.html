@@ -5,5 +5,86 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <main class="page-main">
+        <h1 class="page-main__header">Оставьте свой отзыв</h1>
+        <p class="page-main__note">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form class="review" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-block">
+            <h2 class="form-block_title">Представьтесь:</h2>
+            <ul class="fullname">
+              <li class="fullname__item">
+                <label class="fullname__label" for="id-first-name">Имя*:</label>
+                <input class="fullname__field" type="text" name="user-first" id="id-first-name" placeholder="Петр">
+              </li>
+              <li class="fullname__item">
+                <label class="fullname__label" for="id-last-name">Фамилия*:</label>
+                <input class="fullname__field" type="text" name="user-last" id="id-last-name" placeholder="Иванов">
+              </li>
+              <li class="fullname__item">
+                <label class="fullname__label" for="id-middle-name">Отчество:</label>
+                <input class="fullname__field" type="text" name="user-middle" id="id-middle-name" placeholder="Александрович">
+              </li>
+            </ul>
+          </div>
+          <div class="form-block">
+            <h2 class="form-block_title">Контактная информация:</h2>
+            <ul class="contacts">
+              <li class="contacts__item">
+                <label class="contacts__label" for="id-phone">Контактный телефон*:</label>
+                <input class="contacts__field" type="tel" pattern="8[0-9]{10}" name="user-phone" id="id-phone" placeholder="Введите телефон">
+                <img class="contacts__image" src="http://placehold.it/150x100" alt="Телефон">
+              </li>
+              <li class="contacts__item">
+                <label class="contacts__label" for="id-email">Электронная почта:</label>
+                <input class="contacts__field" type="email" name="user-email" id="id-phone" placeholder="Введите e-mail">
+                <img class="contacts__image" src="http://placehold.it/150x100" alt="Письмо">
+              </li>
+            </ul>
+          </div>
+          <div class="form-block">
+            <h2 class="form-block_title">Ваше общее впечатление:</h2>
+            <ul class="rating">
+              <li class="rating__item">
+                  <input class="input-radio" type="radio" name="radio-value" id="id-radio-value-plus" value="Адаптивная" checked>
+                  <label for="id-radio-value-plus">Скорее положительно</label>
+              </li>
+              <li class="rating__item">
+                  <input class="input-radio" type="radio" name="radio-value" id="id-radio-value-minus" value="Фиксированная">
+                  <label for="id-radio-value-minus">Скорее отрицательно</label>
+              </li>
+              <li class="rating__item">
+                  <input class="input-radio" type="radio" name="radio-value" id="id-radio-value-ziro" value="Резиновая">
+                  <label for="id-radio-value-ziro">Затрудняюсь ответить</label>
+              </li>
+              </ul>
+          </div>
+          <div class="form-block">
+            <h2 class="form-block_title">Посещенные достопримечательности:</h2>
+            <ul class="places">
+              <li class="places__item">
+                <input class="input-checkbox" type="checkbox" name="places-bridge" id="id-places-bridge" checked>
+                <label for="id-places-bridge">Мост Дьявола</label>
+              </li>
+              <li class="places__item">
+                <input class="input-checkbox" type="checkbox" name="places-mount" id="id-places-mount" checked>
+                <label for="id-places-mount">Гора-Колокол</label>
+              </li>
+              <li class="places__item">
+                <input class="input-checkbox" type="checkbox" name="places-park" id="id-places-park" checked>
+                <label for="id-places-park">Слайд-парк</label>
+              </li>
+              <li class="places__item">
+                <input class="input-checkbox" type="checkbox" name="places-red" id="id-places-red">
+                <label for="id-places-red">Красные скалы</label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-block">
+            <h2 class="form-block_title">Опишите свои эмоции:</h2>
+            <textarea name="message" id="id-message" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
+          <input type="submit" class="page-button" value="Отправить отзыв">
+        </form>
+    </main>
   </body>
 </html>
