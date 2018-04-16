@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+              <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+              <a>Фото и Видео</a>
+          </li>
+          <li class="site-list__item">
+              <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+      <div class="header-image">
+          <img class="header-image__page" src="http://placehold.it/150x100" alt="Фото и видео сайта Седона">
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__header">Фото и видео</h1>
+      <p class="page-main__note">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <ul class="photo-collection">
+        <li class="photo-item">
+          <img class="photo-item__image" src="http://placehold.it/150x100" alt="Неродные просторы">
+          <h2 class="photo-item__title">Неродные просторы</h2>
+          <p class="photo-item__author">Автор фото: Борис</p>
+          <div class="photo-item__counter">
+            <button class="photo-item__button"></button>
+            <span class="photo-item__indicator">1350</span>
+          </div>
+        </li>
+        <li class="photo-item">
+          <img class="photo-item__image" src="http://placehold.it/150x100" alt="Местная растительность">
+          <h2 class="photo-item__title">Местная растительность</h2>
+          <p class="photo-item__author">Автор фото: Сергей</p>
+          <div class="photo-item__counter">
+            <button class="photo-item__button"></button>
+            <span class="photo-item__indicator">143</span>
+          </div>
+        </li>
+        <li class="photo-item">
+          <img class="photo-item__image" src="http://placehold.it/150x100" alt="Дорога на север">
+          <h2 class="photo-item__title">Дорога на север</h2>
+          <p class="photo-item__author">Автор фото: Петр</p>
+          <div class="photo-item__counter">
+            <button class="photo-item__button"></button>
+            <span class="photo-item__indicator">96</span>
+          </div>
+        </li>
+        <li class="photo-item">
+          <img class="photo-item__image" src="http://placehold.it/150x100" alt="Мост Дьявола">
+          <h2 class="photo-item__title">Мост Дьявола</h2>
+          <p class="photo-item__author">Автор фото: Антон</p>
+          <div class="photo-item__counter">
+            <button class="photo-item__button"></button>
+            <span class="photo-item__indicator">254</span>
+          </div>
+        </li>
+      </ul>
+      <section class="page-finish">
+        <h2 class="page-finish__title">Вы еще сомневаетесь?</h2>
+        <p class="page-finish__note">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video class="page-finish__video"  controls
+          preload="metadata"
+          width="400" height="225">
+          <source src="/assets/course73/uxtesting.mp4" type="video/mp4">
+          <source src="/assets/course73/uxtesting.ogv" type="video/ogg">
+          <source src="/assets/course73/uxtesting.webm" type="video/webm">
+        </video>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__header">#VISITSEDONA</p>
+      <div class="page-footer__social social">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в YouTube</a>
+        </li>
+      </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+  </html>
