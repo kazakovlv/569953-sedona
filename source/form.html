@@ -68,17 +68,31 @@
             </ul>
           </div>
           <div class="form-block">
+            <div class="form-block__divider form-block__delimiter"></div>
+            <div class="form-block__divider"></div>
             <h2 class="form-block__title">Контактная информация:</h2>
             <ul class="contacts">
               <li class="contacts__item">
                 <label class="contacts__label" for="id-phone">Контактный телефон*:</label>
-                <input class="contacts__field" type="tel" pattern="8[0-9]{10}" name="user-phone" id="id-phone" placeholder="Введите телефон">
-                <img class="contacts__image" src="http://placehold.it/150x100" alt="Телефон">
+                <div class="contacts__field-block">
+                  <div class="contacts__field-container">
+                      <input class="contacts__field" type="tel" pattern="8[0-9]{10}" name="user-phone" id="id-phone" placeholder="Введите телефон">
+                    </div>
+                    <div class="contacts__image-container">
+                        <img class="contacts__image" src="./img/icon-phone.svg" alt="Телефон">
+                    </div>
+                </div>
               </li>
               <li class="contacts__item">
                 <label class="contacts__label" for="id-email">Электронная почта:</label>
-                <input class="contacts__field" type="email" name="user-email" id="id-email" placeholder="Введите e-mail">
-                <img class="contacts__image" src="http://placehold.it/150x100" alt="Письмо">
+                <div class="contacts__field-block">
+                  <div class="contacts__field-container">
+                    <input class="contacts__field" type="email" name="user-email" id="id-email" placeholder="Введите e-mail">
+                  </div>
+                  <div class="contacts__image-container">
+                    <img class="contacts__image" src="./img/icon-mail.svg" alt="Письмо">
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
