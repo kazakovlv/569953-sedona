@@ -35,7 +35,6 @@
     </header>
     <main class="page-main">
         <h1 class="page-main__header">Оставьте свой отзыв</h1>
-
         <p class="page-main__note">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="review" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-block">
@@ -46,15 +45,25 @@
                 <span class="fullname__container-label">
                     <label class="fullname__label" for="id-first-name">Имя*:</label>
                 </span>
-                <input class="fullname__field" type="text" name="user-first" id="id-first-name" placeholder="Петр">
+                <div class="fullname__container-input">
+                    <input class="fullname__field" type="text" name="user-first" id="id-first-name" placeholder="Петр">
+                </div>
               </li>
               <li class="fullname__item">
-                <label class="fullname__label" for="id-last-name">Фамилия*:</label>
-                <input class="fullname__field" type="text" name="user-last" id="id-last-name" placeholder="Иванов">
+                <span class="fullname__container-label">
+                  <label class="fullname__label" for="id-last-name">Фамилия*:</label>
+                </span>
+                <div class="fullname__container-input">
+                    <input class="fullname__field" type="text" name="user-last" id="id-last-name" placeholder="Иванов">
+                </div>
               </li>
               <li class="fullname__item">
-                <label class="fullname__label" for="id-middle-name">Отчество:</label>
-                <input class="fullname__field" type="text" name="user-middle" id="id-middle-name" placeholder="Александрович">
+                <span class="fullname__container-label">
+                  <label class="fullname__label" for="id-middle-name">Отчество:</label>
+                </span>
+                <div class="fullname__container-input">
+                    <input class="fullname__field" type="text" name="user-middle" id="id-middle-name" placeholder="Александрович">
+                </div>
               </li>
             </ul>
           </div>

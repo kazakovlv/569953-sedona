@@ -16,7 +16,7 @@
 .form-block__title {
   display: block;
   margin-top: 2px;
-  margin-bottom: 1px;
+  //margin-bottom: 12px;
   padding-top: 14px;
   font-size: 18px;
   line-height: 26px;
@@ -26,31 +26,32 @@
   text-align: center;
 }
 .fullname {
-  width: 280px;
   margin: 0;
   padding: 0;
-  border: 1px solid blue;
-  box-sizing: border-box;
+  /*border: 1px solid blue;
+  box-sizing: border-box;*/
 }
 .fullname__item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 320px;
-  height: 58px;
-  margin-top: 21px;
+  width: 280px;
+  height: 57px;
+  margin-left: 20px;
+  margin-top: 23px;
   padding: 0;
   list-style: none;
+  /*border: 1px solid blue;
+  box-sizing: border-box;*/
 }
 .fullname__container-label {
+  flex-grow: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 58px;
-  margin-left: 20px;
   margin-right: 16px;
   padding: 0;
-
   /*border: 1px solid green;
   box-sizing: border-box;*/
 }
@@ -62,19 +63,25 @@
   font-style: normal;
   color: #333333;
   text-transform: uppercase;
-  text-align: center;
+}
+.fullname__container-input {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  /*border: 1px solid green;
+  box-sizing: border-box;*/
 }
 .fullname__field {
-  flex-grow: 1;
-  margin: 0;
+  width: 100%;
+  height: 58px;
+  margin-right: 20px;
   padding-left: 16px;
   font-size: 18px;
   line-height: 26px;
   font-style: bold;
   color: black;
   text-transform: none;
-  text-align: left;
   background-color: #f2f2f2;
-  border: 1px solid red;
+  border: 1px solid #f2f2f2;
   box-sizing: border-box;
 }
