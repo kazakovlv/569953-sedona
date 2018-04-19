@@ -8,14 +8,15 @@
 .form-block__divider {
   width: 320px;
   height: 1px;
-  margin: 0;
+  margin-top: 0;
   padding: 0;
   /*background-color: #e5e5e5;*/
   background-color: red;
 }
 .form-block__title {
   display: block;
-  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 1px;
   padding-top: 14px;
   font-size: 18px;
   line-height: 26px;
@@ -25,6 +26,7 @@
   text-align: center;
 }
 .fullname {
+  width: 280px;
   margin: 0;
   padding: 0;
 }
@@ -37,7 +39,18 @@
   margin-top: 21px;
   padding: 0;
   list-style: none;
+}
+.fullname__container-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 58px;
+  margin-left: 20px;
+  margin-right: 16px;
+  padding: 0;
 
+  /*border: 1px solid green;
+  box-sizing: border-box;*/
 }
 .fullname__label {
   margin: 0;
@@ -48,13 +61,11 @@
   color: #333333;
   text-transform: uppercase;
   text-align: center;
-  border: 1px solid green;
-  box-sizing: border-box;
 }
 .fullname__field {
   flex-grow: 1;
   margin: 0;
-  padding-left: 20px;
+  padding-left: 16px;
   font-size: 18px;
   line-height: 26px;
   font-style: bold;
@@ -62,6 +73,6 @@
   text-transform: none;
   text-align: left;
   background-color: #f2f2f2;
-  border: 1px solid yellow;
+  border: 1px solid red;
   box-sizing: border-box;
 }
