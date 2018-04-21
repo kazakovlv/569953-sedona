@@ -1,28 +1,33 @@
 .page-header {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   padding: 0;
 }
-.main-nav {
-  position: relative;
-  margin: 0;
-  padding: 0;
+.page-header__menu-panel {
+  width: 320px;
+  height: 56px;;
+  /*border: 1px solid green;
+  box-sizing: border-box;*/
 }
-.main-nav__button {
+.page-header__button-open {
   position: absolute;
-  //fill: white;
   left: 277px;
   top: 17px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: white;
+  fill: #81b3d2;
 }
-.main-nav__divider-top {
-  width: 320px;
-  height: 1px;
-  background-color: #678fa8;
-}
-.main-nav__divider-button {
-  width: 320px;
-  height: 1px;
-  background-color: #9ac2db;
+.page-header__logo {
+  position: absolute;
+  z-index: 100;
+  display: block;
+  top: 0;
+  left: 109px;
+  /*border: 1px solid green;
+  box-sizing: border-box;*/
 }
 .site-list {
   margin: 0;
