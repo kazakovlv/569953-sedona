@@ -1,29 +1,29 @@
 @font-face {
-  font-family: 'PT Sans';
-  src: url('../fonts/ptsans.woff2') format('woff2'),
-        url('../fonts/ptsans.woff') format('woff');
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'PT Sans';
-  src: url('../fonts/ptsansbold.woff2') format('woff2'),
-        url('../fonts/ptsansbold.woff') format('woff');
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-weight: normal;
   font-style: bold;
 }
 
-@import 'page-header.less';
-@import 'main-nav.less';
-@import 'site-list.less';
-@import 'header-image.less';
-@import 'page-main';
-@import 'page-footer';
-@import 'photo-collection';
-@import 'review.less';
+@import "page-header.less";
+@import "main-nav.less";
+@import "site-list.less";
+@import "header-image.less";
+@import "page-main";
+@import "page-footer";
+@import "photo-collection";
+@import "review.less";
 
-body { font-family: 'PT Sans', sans-serif; }
+body {
+  font-family: "PT Sans", sans-serif;
+}
 
 .page-body {
   margin: 0;
@@ -33,15 +33,15 @@ body { font-family: 'PT Sans', sans-serif; }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  //-webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
