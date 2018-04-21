@@ -12,23 +12,30 @@
   font-style: bold;
 }
 
-@import "page-header.less";
-@import "main-nav.less";
-@import "site-list.less";
-@import "header-image.less";
-@import "page-main";
-@import "page-footer";
-@import "photo-collection";
-@import "review.less";
-
-body {
-  font-family: "PT Sans", sans-serif;
-}
-
-.page-body {
-  margin: 0;
-  padding: 0;
-}
+@import "./blocks/advantages-list/advantages-list.less";
+@import "./blocks/collection-prorety/collection-prorety.less";
+@import "./blocks/contacts/contacts.less";
+@import "./blocks/emotions/emotions.less";
+@import "./blocks/form-block/form-block.less";
+@import "./blocks/form-review-error/form-review-error.less";
+@import "./blocks/form-review-ok/form-review-ok.less";
+@import "./blocks/fullname/fullname.less";
+@import "./blocks/header-image/header-image.less";
+@import "./blocks/input-radio/input-radio.less";
+@import "./blocks/main-nav/main-nav.less";
+@import "./blocks/page-body/page-body.less";
+@import "./blocks/page-finish/page-finish.less";
+@import "./blocks/page-footer/page-footer.less";
+@import "./blocks/page-header/page-header.less";
+@import "./blocks/page-main/page-main.less";
+@import "./blocks/photo-collection/photo-collection.less";
+@import "./blocks/photo-item/photo-item.less";
+@import "./blocks/places/places.less";
+@import "./blocks/rating/rating.less";
+@import "./blocks/review/review.less";
+@import "./blocks/site-list/site-list.less";
+@import "./blocks/social/social.less";
+@import "./blocks/video-player/video-player.less";
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -40,7 +47,6 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  //-webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
