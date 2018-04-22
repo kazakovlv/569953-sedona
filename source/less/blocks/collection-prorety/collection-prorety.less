@@ -3,6 +3,47 @@
   background-color: white;
 }
 
+@media (min-width: @tablet-width) {
+  .collection-prorety {
+    display: flex;
+    flex-direction: row;
+    width: @tablet-width;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: white;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .collection-prorety {
+    //color: black;
+    //background-color: white;
+  }
+}
+
+.collection-prorety__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .collection-prorety__item {
+    width: 256px;
+    height: 256px;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid brown;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .collection-prorety__item {
+    //
+  }
+}
+
 .collection-prorety__title {
   font-size: 18px;
   line-height: 26px;
