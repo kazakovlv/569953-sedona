@@ -17,12 +17,19 @@
 
 @media (min-width: @desktop-width) {
   .collection-prorety {
-    //color: black;
+    display: flex;
+    flex-direction: row;
+    width: @desktop-width;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: white;
     //background-color: white;
   }
 }
 
 .collection-prorety__item {
+  width: 280px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -34,13 +41,16 @@
     height: 256px;
     margin: 0;
     padding: 0;
-    outline: 1px solid brown;
+    //outline: 1px solid brown;
   }
 }
 
 @media (min-width: @desktop-width) {
   .collection-prorety__item {
-    //
+    width: 400px;
+    height: 256px;
+    margin: 0;
+    padding: 0;
   }
 }
 

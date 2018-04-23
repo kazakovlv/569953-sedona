@@ -5,7 +5,7 @@
   min-width: 320px;
   min-height: 243px;
   padding: 0;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   //outline: 1px solid blueviolet;
 }
 
@@ -17,13 +17,20 @@
     min-width: @tablet-width;
     min-height: 243px;
     padding: 0;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     //outline: 1px solid blueviolet;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: @desktop-width;
+    min-height: 243px;
+    padding: 0;
+    //text-transform: uppercase;
     //outline: 1px solid blueviolet;
   }
 }
