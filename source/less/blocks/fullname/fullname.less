@@ -1,4 +1,24 @@
-.fullname {
+@media (min-width: @tablet-width) {
+  .fullname {
+    order: 2;
+    width: 324px;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid magenta;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fullname {
+    order: 2;
+    width: 480px;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid magenta;
+  }
+}
+
+.fullname__block {
   margin: 0;
   padding: 0;
   /*border: 1px solid blue;

@@ -1,7 +1,46 @@
 .contacts {
+  margin: 0;
+  padding: 0;
+  outline: 1px solid magenta;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    order: 3;
+    width: 648px;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid magenta;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    order: 3;
+    width: 960px;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid magenta;
+  }
+}
+
+.contacts__list {
   margin-top: 21px;
   margin-left: 20px;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }
 
 .contacts__item {

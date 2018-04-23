@@ -55,10 +55,10 @@
         <h1 class="page-main__header">Оставьте свой отзыв</h1>
         <p class="page-main__note">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="review" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form-block">
+          <div class="fullname">
             <div class="form-block__divider"></div>
             <h2 class="form-block__title">Представьтесь:</h2>
-            <ul class="fullname">
+            <ul>
               <li class="fullname__item">
                 <span class="fullname__container-label">
                     <label class="fullname__label" for="id-first-name">Имя*:</label>
@@ -85,10 +85,10 @@
               </li>
             </ul>
           </div>
-          <div class="form-block">
+          <div class="contacts">
             <div class="form-block__divider form-block__delimiter"></div>
             <h2 class="form-block__title">Контактная информация:</h2>
-            <ul class="contacts">
+            <ul class="contacts__list">
               <li class="contacts__item">
                 <label class="contacts__label" for="id-phone">Контактный телефон*:</label>
                 <div class="contacts__field-block">
@@ -113,10 +113,10 @@
               </li>
             </ul>
           </div>
-          <div class="form-block">
+          <div class="rating">
             <div class="form-block__divider form-block__delimiter--radio"></div>
             <h2 class="form-block__title">Ваше общее впечатление:</h2>
-            <ul class="rating">
+            <ul>
               <li class="rating__item">
                   <input class="visually-hidden input-radio" type="radio" name="radio-value" id="id-radio-value-plus" value="Адаптивная" checked>
                   <label for="id-radio-value-plus">Скорее положительное</label>
@@ -131,10 +131,10 @@
               </li>
               </ul>
           </div>
-          <div class="form-block">
+          <div class="places">
             <div class="form-block__divider form-block__delimiter--check"></div>
             <h2 class="form-block__title">Посещенные достопримечательности:</h2>
-            <ul class="places">
+            <ul>
               <li class="places__item">
                 <input class="visually-hidden places__input-checkbox" type="checkbox" name="places-bridge" id="id-places-bridge" checked>
                 <label for="id-places-bridge">Мост Дьявола</label>
@@ -153,12 +153,13 @@
               </li>
             </ul>
           </div>
-          <div class="form-block">
+          <div class="emotions">
             <div class="form-block__divider form-block__delimiter--textarea"></div>
             <h2 class="form-block__title">Опишите свои эмоции:</h2>
-            <textarea class="emotions" name="message" id="id-message" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="emotions__text" name="message" id="id-message" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
-          <input type="submit" class="review__button review__send" value="Отправить отзыв">
+          <input type="submit" class="review__send" value="Отправить отзыв">
+          <p class="review__notify">* - Обязательные поля</p>
         </form>
     </main>
     <footer class="page-footer">
