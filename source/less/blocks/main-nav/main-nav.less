@@ -21,6 +21,17 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .main-nav {
+    display: block;
+    width: @desktop-width;
+    padding: 0;
+    margin: 0 auto;
+    background-color: white;
+    outline: 1px solid brown;
+  }
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
@@ -46,6 +57,20 @@
     outline: 1px solid blue;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    width: @desktop-width;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid blue;
+  }
+}
+
 
 @media (min-width: @desktop-width) {
   .main-nav__list {
