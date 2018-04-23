@@ -1,7 +1,5 @@
 .places {
-  width: 200px;
-  margin-left: 99px;
-  margin-top: 33px;
+  margin: 0;
   padding: 0;
 }
 
@@ -11,7 +9,7 @@
     width: 648px;
     margin: 0;
     padding: 0;
-    outline: 1px solid magenta;
+    //outline: 1px solid magenta;
   }
 }
 
@@ -21,7 +19,36 @@
     width: 960px;
     margin: 0;
     padding: 0;
-    outline: 1px solid magenta;
+    //outline: 1px solid magenta;
+  }
+}
+
+.places__list {
+  width: 200px;
+  margin-left: 99px;
+  margin-top: 33px;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .places__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 648px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .places__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 960px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -37,10 +64,26 @@
   text-transform: none;
   list-style: none;
   cursor: pointer;
-  /*border: 1px solid green;
-  box-sizing: border-box;*/
+  //outline: 1px solid magenta;
 }
 
+@media (min-width: @tablet-width) {
+  .places__item {
+    width: 240px;
+    display: block;
+    position: relative;
+    margin-bottom: 55px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-style: bold;
+    color: black;
+    text-transform: none;
+    list-style: none;
+    cursor: pointer;
+    //outline: 1px solid magenta;
+  }
+}
 
 .places__input-checkbox + label::before {
   content: "";
