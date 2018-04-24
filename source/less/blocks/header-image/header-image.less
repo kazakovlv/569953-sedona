@@ -22,7 +22,7 @@
     justify-content: flex-end; */
     align-items: center;
     margin-top: -28px;
-    min-width: 1200px;
+    min-width: 768px;
     min-height: 521px;
     background-image: url("../img/back-desktop.jpg");
     background-repeat: no-repeat;
@@ -66,6 +66,42 @@
   //outline: 1px solid yellow;
 }
 
+@media (min-width: @tablet-width) {
+  .header-image--nomain {
+    display: flex;
+    flex-direction: column;
+    /* Не работает в IE11
+    justify-content: flex-end; */
+    align-items: center;
+    margin-top: -28px;
+    min-width: 768px;
+    height: 290px;
+    background-image: url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 50% 50%;
+    //outline: 1px solid yellow;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-image--nomain {
+    display: flex;
+    flex-direction: column;
+    /* Не работает в IE11
+    justify-content: flex-end; */
+    align-items: center;
+    margin-top: -28px;
+    min-width: 768px;
+    height: 300px;
+    background-image: url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 50% 50%;
+    //outline: 1px solid yellow;
+  }
+}
+
 .header-image__text {
   display: block;
   flex-grow: 1;
@@ -107,6 +143,17 @@
   height: 50px;
   margin-top: 53px;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .header-image__text--nomain {
+    display: block;
+    flex-grow: 1;
+    width: 460px;
+    height: 80px;
+    margin-top: 53px;
+    padding: 0;
+  }
 }
 
 .header-image__triangle {
