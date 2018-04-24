@@ -32,3 +32,39 @@
   background-color: #f2f2f2;
   //outline: 1px solid magenta;
 }
+
+.emotions__divider {
+  min-width: 320px;
+  height: 1px;
+  margin-top: -16px;
+  margin-bottom: 5px;
+  padding: 0;
+  /*background-color: #e5e5e5;*/
+  background-color: red;
+}
+
+@media (min-width: @tablet-width) {
+  .emotions__divider {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotions__divider {
+    display: none;
+  }
+}
+
+.emotions__title {
+  display: block;
+  margin-top: 1px;
+  //margin-bottom: 12px;
+  padding-top: 14px;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: bold;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+

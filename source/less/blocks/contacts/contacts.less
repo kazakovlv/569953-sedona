@@ -108,3 +108,37 @@
   bottom: 0;
   right: 0;
 }
+
+.contacts__divider {
+  min-width: 320px;
+  height: 1px;
+  margin-top: 24px;
+  padding: 0;
+  /*background-color: #e5e5e5;*/
+  background-color: red;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__divider {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__divider {
+    display: none;
+  }
+}
+
+.contacts__title {
+  display: block;
+  margin-top: 1px;
+  //margin-bottom: 12px;
+  padding-top: 14px;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: bold;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}

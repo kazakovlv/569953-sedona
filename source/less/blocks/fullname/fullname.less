@@ -83,3 +83,37 @@
   border: 1px solid #f2f2f2;
   box-sizing: border-box;
 }
+
+.fullname__divider {
+  min-width: 320px;
+  height: 1px;
+  margin-top: 0;
+  padding: 0;
+  /*background-color: #e5e5e5;*/
+  background-color: red;
+}
+
+@media (min-width: @tablet-width) {
+  .fullname__divider {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fullname__divider {
+    display: none;
+  }
+}
+
+.fullname__title {
+  display: block;
+  margin-top: 1px;
+  //margin-bottom: 12px;
+  padding-top: 14px;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: bold;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
