@@ -20,6 +20,28 @@
   text-align: center;
 }
 
+@media (min-width: @tablet-width) {
+  .page-finish__title {
+    display: block;
+    width: 420px;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    line-height: 26px;
+    font-style: bold;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-finish__title {
+    display: block;
+    width: 420px;
+  }
+}
+
 .page-finish__note {
   display: block;
   width: 260px;
@@ -31,8 +53,13 @@
   color: #333333;
   text-transform: uppercase;
   text-align: center;
-  /*border: 1px solid brown;
-  box-sizing: border-box;*/
+}
+
+@media (min-width: @tablet-width) {
+  .page-finish__note {
+    display: block;
+    width: 420px;
+  }
 }
 
 .page-finish__reference {

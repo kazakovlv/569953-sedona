@@ -20,17 +20,27 @@
   border: none;
   background-color: white;
   fill: #81b3d2;
+  //z-index: 100;
 }
 
-.page-header__logo {
-  display: block;
-  //outline: 1px solid red;
+@media (min-width: @tablet-width) {
+  .page-header__button-open {
+    display: none;
+  }
 }
 
-.page-header__logo-image {
-  margin: 0 auto;
-  display: block;
-  top: -28px;
-  z-index: 100;
-  //outline: 1px solid green;
+.page-header__button-close {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  fill: white;
+  background-color: #81b3d2;
+  border: 0;
+  z-index: 110;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__button-close {
+    display: none;
+  }
 }
