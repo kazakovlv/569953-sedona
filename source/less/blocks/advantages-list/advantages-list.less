@@ -26,6 +26,8 @@
 .advantages-list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  counter-reset: advantage;
 }
 
 @media (min-width: @tablet-width) {
@@ -127,11 +129,13 @@
 .advantages-list__text-color {
   display: block;
   width: 320px;
-  height: 110px;
+  min-height: 130px;
   margin: 0;
   padding: 0;
+  padding-bottom: 27px;
   color: white;
   background-color: #81b3d2;
+  //outline: 1px solid yellow;
 }
 
 @media (min-width: @tablet-width) {
@@ -219,19 +223,44 @@
 
 .advantages-list__header {
   display: block;
-  margin: 0;
+  margin-top: 39px;
   padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  color: white;
+  font-style: bold;
   text-align: center;
+  text-transform: uppercase;
+  //outline: 1px solid blue;
+}
+
+.advantages-list__header::after {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 1px;
+  counter-increment: advantage;
+  content: "–  №" counter(advantage) "  –";
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  text-align: center;
+  //outline: 1px solid blue;
 }
 
 /* Стиль как у номера */
 .advantages-list__note {
-  margin: 0;
+  display: block;
+  width: 270px;
+  margin-left: 25px;
+  margin-top: 0;
+  //margin-bottom: 145px;
   padding: 0;
   font-size: 14px;
   line-height: 21px;
   font-style: normal;
   text-align: center;
+  text-transform: uppercase;
+  //outline: 1px solid green;
 }
 
 .advantages-list__note-grey {

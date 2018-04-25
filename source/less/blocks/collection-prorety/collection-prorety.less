@@ -1,4 +1,6 @@
 .collection-prorety {
+  margin: 20px 0 0 0;
+  padding: 0;
   color: black;
   background-color: white;
 }
@@ -33,6 +35,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  //outline: 1px solid blue;
 }
 
 @media (min-width: @tablet-width) {
@@ -55,13 +58,71 @@
 }
 
 .collection-prorety__title {
+  display: block;
+  margin: 0;
+  padding: 10px 20px 0 9px;
   font-size: 18px;
   line-height: 26px;
   font-style: bold;
+  color: #333333;
+  text-transform: uppercase;
+  //outline: 1px solid yellow;
 }
 
 .collection-prorety__text {
+  display: block;
+  margin: 0;
+  padding-left: 70px;
+  padding-top: 7px;
+  padding-bottom: 18px;
   font-size: 14px;
   line-height: 21px;
   font-style: normal;
+  color: black;
+  text-transform: uppercase;
+  //outline: 1px solid brown;
+}
+
+.collection-prorety__title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0;
+  //outline: 1px solid brown;
+  //background-color: azure;
+}
+
+.collection-prorety__title-image {
+  display: block;
+  width: 45px;
+  height: 44px;
+  left: 10px;
+  margin-left: 16px;
+  //margin-top: 20px;
+  padding: 0;
+  fill: #81b3d2;
+  //outline: 1px solid brown;
+}
+
+.collection-prorety__icon-house {
+  margin-left: 7px;
+  margin-top: 1px;
+  display: block;
+  padding: 0;
+  fill: #81b3d2;
+}
+
+.collection-prorety__icon-gift {
+  display: block;
+  margin-left: 10px;
+  padding: 0;
+  fill: #81b3d2;
+}
+
+.collection-prorety__icon-burger {
+  display: block;
+  margin-left: 2px;
+  margin-top: 5px;
+  padding: 0;
+  fill: #81b3d2;
 }
