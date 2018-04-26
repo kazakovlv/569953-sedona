@@ -92,6 +92,17 @@
   //background-color: azure;
 }
 
+@media (min-width: @tablet-width) {
+  .collection-prorety__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //margin: 0 auto;
+    outline: 1px solid brown;
+    //background-color: azure;
+  }
+}
+
 .collection-prorety__title-image {
   display: block;
   width: 45px;
@@ -104,12 +115,36 @@
   //outline: 1px solid brown;
 }
 
+@media (min-width: @tablet-width) {
+  .collection-prorety__title-image {
+    display: block;
+    width: 145px;
+    height: 135px;
+    //left: 10px;
+    margin: 0 auto;
+    //margin-left: 16px;
+    //margin-top: 20px;
+    padding: 0;
+    fill: #81b3d2;
+    outline: 1px solid brown;
+  }
+}
+
 .collection-prorety__icon-house {
+  display: block;
   margin-left: 7px;
   margin-top: 1px;
-  display: block;
   padding: 0;
   fill: #81b3d2;
+}
+
+@media (min-width: @tablet-width) {
+  .collection-prorety__icon-house {
+    width: 76px;
+    height: 72px;
+    margin-left: 35px;
+    margin-top: 60px;
+  }
 }
 
 .collection-prorety__icon-gift {
