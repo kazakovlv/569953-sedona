@@ -1,0 +1,103 @@
+.page-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  min-height: 243px;
+  padding: 0;
+  //text-transform: uppercase;
+  //outline: 1px solid red;
+}
+
+@media (min-width: @tablet-width) {
+  .page-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: @tablet-width;
+    min-height: 243px;
+    padding: 0;
+    //text-transform: uppercase;
+    //outline: 1px solid blueviolet;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: @desktop-width;
+    min-height: 243px;
+    padding: 0;
+    //text-transform: uppercase;
+    //outline: 1px solid blueviolet;
+  }
+}
+
+.page-photo__header {
+  display: block;
+  width: 260px;
+  margin: 38px 30px 10px 30px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: bold;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  //outline: 1px solid red;
+}
+
+@media (min-width: @tablet-width) {
+  .page-photo__header {
+    display: block;
+    width: 450px;
+    margin: 0;
+    padding: 69px 30px 5px 30px;
+    font-size: 30px;
+    line-height: 36px;
+    font-style: bold;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    //outline: 1px solid red;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-photo__header {
+    //outline: 1px solid red;
+  }
+}
+
+.page-photo__note {
+  display: block;
+  width: 280px;
+  margin: 16px 20px 6px 20px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  //outline: 1px solid yellowgreen;
+}
+
+@media (min-width: @tablet-width) {
+  .page-photo__note {
+    width: 435px;
+    margin: 0;
+    padding-top: 19px;
+    font-size: 14px;
+    line-height: 26px;
+    //outline: 1px solid yellowgreen;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-photo__note {
+    //outline: 1px solid yellowgreen;
+  }
+}
