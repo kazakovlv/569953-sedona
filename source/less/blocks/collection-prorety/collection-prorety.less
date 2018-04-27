@@ -84,6 +84,7 @@
 
 .collection-prorety__text {
   display: block;
+  width: 210px;
   margin: 0;
   padding-left: 70px;
   padding-top: 7px;
@@ -92,16 +93,18 @@
   line-height: 21px;
   font-style: normal;
   color: black;
+  //white-space: wrap;
   text-transform: uppercase;
   //outline: 1px solid brown;
 }
 
 @media (min-width: @tablet-width) {
   .collection-prorety__text {
-    width: 155px;
+    width: 160px;
     margin: 0 auto;
     padding-left: 0;
     padding-top: 21px;
+    //white-space: pre-wrap;
     //padding-bottom: 18px;
     text-align: center;
     color: #333333;
@@ -109,9 +112,15 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .collection-prorety__text-with160 {
-    width: 165px;
+@media (min-width: @desktop-width) {
+  .collection-prorety__text {
+    width: 287px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 21px;
+    //padding-bottom: 18px;
+    text-align: center;
+    color: #333333;
     //outline: 1px solid brown;
   }
 }
