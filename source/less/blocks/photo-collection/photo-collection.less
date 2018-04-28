@@ -20,11 +20,8 @@
 
 @media (min-width: @desktop-width) {
   .photo-collection {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     width: 1200px;
-    margin: 0;
+    margin-top: 3px;
     padding: 0;
     //outline: 1px solid blueviolet;
   }
@@ -57,6 +54,7 @@
 @media (min-width: @desktop-width) {
   .photo-collection__item {
     width: 400px;
+    height: 267px;
     margin-top: 0;
     padding: 0;
     list-style: none;
@@ -85,6 +83,65 @@
 @media (min-width: @desktop-width) {
   .photo-collection__item-big {
     width: 1200px;
+    height: 400px;
+    margin-top: 66px;
+    padding: 0;
+    //outline: 1px solid blueviolet;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-collection__discription-big {
+    display: block;
+    position: absolute;
+    width: 1200px;
+    height: 80px;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-collection__discription-big .photo-collection__discription-opacity {
+    display: block;
+    position: absolute;
+    width: 1200px;
+    height: 80px;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #b2b2b2;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-collection__discription {
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 80px;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    //background-color: #b2b2b2;
+    //opacity: 0.3;
+    //opacity: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-collection__discription-opacity {
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 80px;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #b2b2b2;
+    opacity: 0.3;
   }
 }
 
@@ -98,12 +155,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .photo-collection__divider {
-    display: none;
-  }
-}
-
-@media (min-width: @desktop-width) {
   .photo-collection__divider {
     display: none;
   }
@@ -123,6 +174,13 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .photo-collection__image {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .photo-collection__title {
   display: block;
   margin: 11px 20px 0 20px;
@@ -131,6 +189,19 @@
   font-style: bold;
   color: black;
   text-transform: uppercase;
+}
+
+@media (min-width: @desktop-width) {
+  .photo-collection__title {
+    display: block;
+    margin: 15px 20px 0 22px;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: bold;
+    color: white;
+    z-index: 56;
+    text-transform: uppercase;
+  }
 }
 
 .photo-collection__author {
@@ -143,6 +214,20 @@
   text-transform: none;
 }
 
+@media (min-width: @desktop-width) {
+  .photo-collection__author {
+    display: block;
+    margin: 0 20px 0 20px;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    color: white;
+    text-transform: none;
+    opacity: 1;
+    //z-index: 154;
+  }
+}
+
 .photo-collection__counter {
   display: flex;
   flex-direction: row;
@@ -150,14 +235,6 @@
   margin: 8px 20px 15px 20px;
 }
 
-@media (min-width: @tablet-width) {
-  .photo-collection__item-big .photo-collection__counter {
-    position: absolute;
-    left: 563px;
-    bottom: 28px;
-    margin: 0;
-  }
-}
 
 @media (min-width: @tablet-width) {
   .photo-collection__counter {
@@ -170,7 +247,28 @@
 
 @media (min-width: @desktop-width) {
   .photo-collection__counter {
-    //margin: 8px 20px 15px 20px;
+    position: absolute;
+    left: 314px;
+    bottom: 28px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .photo-collection__item-big .photo-collection__counter {
+    position: absolute;
+    left: 563px;
+    bottom: 28px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-collection__item-big .photo-collection__counter {
+    position: absolute;
+    left: 1114px;
+    bottom: 28px;
+    margin: 0;
   }
 }
 
@@ -183,6 +281,14 @@
   .photo-collection__button {
     margin-right: 11px;
     padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-collection__button {
+    margin-right: 11px;
+    padding: 0;
+    fill: white;
   }
 }
 
@@ -201,5 +307,13 @@
   .photo-collection__indicator {
     margin-left: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-collection__indicator {
+    margin-left: 0;
+    padding: 0;
+    color: white;
   }
 }
