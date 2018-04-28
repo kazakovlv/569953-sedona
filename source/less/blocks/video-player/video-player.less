@@ -9,16 +9,15 @@
 
 @media (min-width: @tablet-width) {
   .video-player {
-    position: relative;
     width: 648px;
     height: 500px;
-    margin-top: 34px;
+    margin-top: 71px;
+    margin-bottom: 41px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .video-player {
-    position: relative;
     width: 800px;
     height: 500px;
     margin-top: 34px;
@@ -44,6 +43,15 @@
   background-color: #666666;
 }
 
+@media (min-width: @tablet-width) {
+  .video-player__top-rectangle {
+    top: 407px;
+    left: 0;
+    width: 648px;
+    height: 93px;
+  }
+}
+
 .video-player__bottom-rectangle {
   position: absolute;
   left: 20px;
@@ -52,6 +60,12 @@
   height: 66px;
   //z-index: 31;
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .video-player__bottom-rectangle {
+    display: none;
+  }
 }
 
 .video-player__scale {
@@ -66,6 +80,14 @@
   background-color: white;
 }
 
+@media (min-width: @tablet-width) {
+  .video-player__scale {
+    left: 93px;
+    top: 452px;
+    width: 389px;
+  }
+}
+
 .video-player__slider {
   position: absolute;
   left: 77px;
@@ -77,20 +99,62 @@
   background-color: #ffffff;
 }
 
+@media (min-width: @tablet-width) {
+  .video-player__slider {
+    position: absolute;
+    left: 205px;
+    top: 450px;
+    width: 11px;
+    height: 10px;
+    z-index: 36;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+
 .video-player__button-replay {
   position: absolute;
   left: 45px;
   top: 224px;
+  fill: black;
+}
+
+@media (min-width: @tablet-width) {
+  .video-player__button-replay {
+    left: 35px;
+    top: 442px;
+    z-index: 37;
+    fill: white;
+  }
 }
 
 .video-player__button-subtitles {
   position: absolute;
   left: 194px;
   top: 224px;
+  fill: black;
+}
+
+@media (min-width: @tablet-width) {
+  .video-player__button-subtitles {
+    left: 524px;
+    top: 444px;
+    z-index: 38;
+    fill: white;
+  }
 }
 
 .video-player__button-fullscreen {
   position: absolute;
   left: 257px;
   top: 224px;
+}
+
+@media (min-width: @tablet-width) {
+  .video-player__button-fullscreen {
+    left: 587px;
+    top: 444px;
+    z-index: 39;
+    fill: white;
+  }
 }
