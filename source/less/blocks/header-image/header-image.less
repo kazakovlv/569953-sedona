@@ -11,16 +11,19 @@
   background-repeat: no-repeat;
   background-color: white;
   background-position: 50% 50%;
-  outline: 1px solid yellow;
+  //outline: 1px solid yellow;
 }
 
 @media (min-width: @tablet-width) {
   .header-image {
     margin-top: -19px;
     min-width: 768px;
-    min-height: 518px;
+    min-height: 538px;
+    margin-left: 0 auto;
     background-image: url("../img/back-desktop-768.jpg");
-    //outline: 1px solid yellow;
+    background-size: 768px 538px;
+    background-position-y: 15px;
+    //outline: 1px solid blue;
   }
 }
 
@@ -40,16 +43,16 @@
   height: 215px;
   margin-top: 90px;
   padding: 0;
-  outline: 1px solid red;
+  //outline: 1px solid red;
 }
 
 @media (min-width: @tablet-width) {
   .header-image__text {
     display: block;
-    flex-grow: 1;
+    //flex-grow: 1;
     width: 458px;
     height: 350px;
-    margin-top: 90px;
+    margin-top: 65px;
     padding: 0;
     //outline: 1px solid red;
   }
@@ -92,14 +95,14 @@
   width: 320px;
   margin-top: 60px;
   padding: 0;
-  outline: 1px solid green;
+  //outline: 1px solid green;
 }
 
 @media (min-width: @tablet-width) {
   .header-image__triangle {
     width: 768px;
     height: 57px;
-    margin-top: 57px;
+    margin-top: 0;
     //outline: 1px solid green;
   }
 }
