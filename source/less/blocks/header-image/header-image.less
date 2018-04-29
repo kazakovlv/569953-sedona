@@ -11,42 +11,25 @@
   background-repeat: no-repeat;
   background-color: white;
   background-position: 50% 50%;
-  //outline: 1px solid yellow;
+  outline: 1px solid yellow;
 }
 
 @media (min-width: @tablet-width) {
   .header-image {
-    display: flex;
-    flex-direction: column;
-    /* Не работает в IE11
-    justify-content: flex-end; */
-    align-items: center;
-    margin-top: -28px;
+    margin-top: -19px;
     min-width: 768px;
-    min-height: 521px;
-    background-image: url("../img/back-desktop.jpg");
-    background-repeat: no-repeat;
-    background-color: white;
-    background-position: 50% 50%;
+    min-height: 518px;
+    background-image: url("../img/back-desktop-768.jpg");
     //outline: 1px solid yellow;
   }
 }
 
 @media (min-width: @desktop-width) {
   .header-image {
-    display: flex;
-    flex-direction: column;
-    /* Не работает в IE11
-    justify-content: flex-end; */
-    align-items: center;
     margin-top: -28px;
-    min-width: 768px;
-    min-height: 520px;
-    background-image: url("../img/back-desktop.jpg");
-    background-repeat: no-repeat;
-    background-color: white;
-    background-position: 50% 50%;
-    //outline: 1px solid yellow;
+    min-width: 1200px;
+    min-height: 518px;
+    background-image: url("../img/back-desktop-1200.jpg");
   }
 }
 
@@ -57,7 +40,7 @@
   height: 215px;
   margin-top: 90px;
   padding: 0;
-  //outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 @media (min-width: @tablet-width) {
@@ -109,5 +92,22 @@
   width: 320px;
   margin-top: 60px;
   padding: 0;
-  //outline: 1px solid green;
+  outline: 1px solid green;
+}
+
+@media (min-width: @tablet-width) {
+  .header-image__triangle {
+    width: 768px;
+    height: 57px;
+    margin-top: 57px;
+    //outline: 1px solid green;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-image__triangle {
+    width: 1200px;
+    margin-top: 57px;
+    //outline: 1px solid green;
+  }
 }
