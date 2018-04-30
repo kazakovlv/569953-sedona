@@ -1,3 +1,9 @@
+.fullname {
+  margin: 0;
+  padding: 0;
+  //outline: 1px solid magenta;
+}
+
 @media (min-width: @tablet-width) {
   .fullname {
     order: 2;
@@ -18,6 +24,12 @@
   }
 }
 
+.fullname ul {
+  margin: 0;
+  padding: 0;
+  //list-style: none;
+}
+
 .fullname__block {
   margin: 0;
   padding: 0;
@@ -29,11 +41,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 260px;
-  height: 57px;
-  //margin-left: 20px;
-  margin-left: 0;
-  margin-top: 23px;
+  width: 280px;
+  height: 56px;
+  margin-left: 20px;
+  //margin-left: 0;
+  margin-top: 22px;
   padding: 0;
   list-style: none;
   //outline: 1px solid blue;
@@ -84,6 +96,18 @@
   box-sizing: border-box;
 }
 
+.fullname__field::before {
+  content: "Петр";
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  color: red;
+  left: 10px;
+  top: 10px;
+  outline: 1px solid blue;
+  background-color: red;
+}
+
 .fullname__divider {
   min-width: 318px;
   height: 1px;
@@ -109,7 +133,7 @@
   display: block;
   margin-top: 1px;
   //margin-bottom: 12px;
-  padding-top: 14px;
+  padding-top: 17px;
   font-size: 18px;
   line-height: 26px;
   font-style: bold;
