@@ -32,18 +32,12 @@
 
 @media (min-width: @desktop-width) {
   .header-image-nomain {
-    display: flex;
-    flex-direction: column;
-    /* Не работает в IE11
-    justify-content: flex-end; */
-    align-items: center;
-    margin-top: -28px;
-    min-width: 768px;
-    height: 300px;
-    background-image: url("../img/back-desktop.jpg");
-    background-repeat: no-repeat;
-    background-color: white;
-    background-position: 50% 50%;
+    //margin-top: -28px;
+    min-width: 1200px;
+    height: 301px;
+    background-image: url("../img/back-desktop-nomain-1200.jpg");
+    background-size: 1200px 357px;
+    background-position-y: bottom;
     //outline: 1px solid yellow;
   }
 }
@@ -88,3 +82,13 @@
     //outline: 1px solid green;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .header-image-nomain__triangle {
+    width: 1200px;
+    height: 57px;
+    margin-top: 0;
+    //outline: 1px solid green;
+  }
+}
+
