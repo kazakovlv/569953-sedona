@@ -48,6 +48,13 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .emotions__text {
+    width: 920px;
+    //outline: 1px solid magenta;
+  }
+}
+
 .emotions__divider {
   min-width: 320px;
   height: 1px;
@@ -71,7 +78,9 @@
 
 @media (min-width: @desktop-width) {
   .emotions__divider {
-    display: none;
+    top: 33px;
+    width: 960px;
+    //background-color: red;
   }
 }
 
@@ -93,6 +102,20 @@
     position: absolute;
     width: 398px;
     left: 125px;
+    margin: 0 auto;
+    padding-top: 21px;
+    font-size: 21px;
+    background-color: white;
+    z-index: 1;
+    //outline: 1px solid magenta;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotions__title {
+    position: absolute;
+    width: 398px;
+    left: 281px;
     margin: 0 auto;
     padding-top: 21px;
     font-size: 21px;
