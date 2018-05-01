@@ -7,9 +7,10 @@
 @media (min-width: @tablet-width) {
   .fullname {
     order: 2;
-    width: 324px;
+    //width: 324px;
     margin: 0;
     padding: 0;
+    padding-left: 57px;
     //outline: 1px solid magenta;
   }
 }
@@ -51,6 +52,22 @@
   //outline: 1px solid blue;
 }
 
+@media (min-width: @tablet-width) {
+  .fullname__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 267px;
+    height: 56px;
+    //margin-left: 20px;
+    margin-left: 0;
+    margin-top: 22px;
+    padding: 0;
+    list-style: none;
+    //outline: 1px solid blue;
+  }
+}
+
 .fullname__container-label {
   flex-grow: 0;
   display: flex;
@@ -76,7 +93,7 @@
 .fullname__container-input {
   display: block;
   flex-grow: 1;
-  flex-shrink: 1;
+  //flex-shrink: 1;
   /*border: 1px solid green;
   box-sizing: border-box;*/
 }
@@ -96,6 +113,7 @@
   box-sizing: border-box;
 }
 
+/*
 .fullname__field::before {
   content: "Петр";
   position: absolute;
@@ -107,14 +125,15 @@
   outline: 1px solid blue;
   background-color: red;
 }
+*/
 
 .fullname__divider {
   min-width: 318px;
   height: 1px;
   margin-top: 0;
   padding: 0;
-  /*background-color: #e5e5e5;*/
-  background-color: red;
+  background-color: #e5e5e5;
+  //background-color: red;
 }
 
 @media (min-width: @tablet-width) {
@@ -140,4 +159,15 @@
   color: black;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .fullname__title {
+    width: 267px;
+    margin-bottom: 58px;
+    padding-top: 17px;
+    font-size: 21px;
+    text-align: left;
+    //outline: 1px solid blue;
+  }
 }
