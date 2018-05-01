@@ -149,7 +149,7 @@
             <textarea class="emotions__text" name="message" id="id-message" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
           <input type="submit" class="review__send" value="Отправить отзыв">
-          <p class="review__notify">* - Обязательные поля</p>
+          <p class="review__notify">* &mdash; Обязательные поля</p>
         </form>
     </main>
     <footer class="page-footer">
@@ -203,19 +203,19 @@
         </a>
       </div>
     </footer>
-    <form class="form-review-ok" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form-review-ok visually-hidden" action="https://echo.htmlacademy.ru" method="post">
       <h2 class="form-review-ok__title">Ваш отзыв отправлен!</h2>
       <p class="form-review-ok__note">
         Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
       </p>
-      <button class="form-review-ok__button">Закрыть окно</button>
+      <button class="form-review-ok__button" type="button">Закрыть окно</button>
     </form>
-    <form class="form-review-error" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form-review-error visually-hidden" action="https://echo.htmlacademy.ru" method="post">
       <h2 class="form-review-error__title">Что-то пошло не так!</h2>
       <p class="form-review-error__note">
         Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
       </p>
-      <button class="form-review-error__button">OK</button>
+      <button class="form-review-error__button" type="button">OK</button>
     </form>
   </body>
 </html>
