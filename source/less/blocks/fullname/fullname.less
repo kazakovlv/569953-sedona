@@ -17,10 +17,11 @@
 
 @media (min-width: @desktop-width) {
   .fullname {
+    position: relative;
     order: 2;
-    width: 480px;
+    width: 400px;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 80px;
     //outline: 1px solid magenta;
   }
 }
@@ -58,6 +59,22 @@
     flex-direction: row;
     justify-content: space-between;
     width: 267px;
+    height: 56px;
+    //margin-left: 20px;
+    margin-left: 0;
+    margin-top: 22px;
+    padding: 0;
+    list-style: none;
+    //outline: 1px solid blue;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fullname__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
     height: 56px;
     //margin-left: 20px;
     margin-left: 0;
@@ -128,7 +145,7 @@
 */
 
 .fullname__divider {
-  min-width: 318px;
+  width: 318px;
   height: 1px;
   margin-top: 0;
   padding: 0;
@@ -144,7 +161,13 @@
 
 @media (min-width: @desktop-width) {
   .fullname__divider {
-    display: none;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 1px;
+    height: 293px;
+    background-color: #e5e5e5;
   }
 }
 
@@ -165,6 +188,18 @@
   .fullname__title {
     width: 267px;
     margin-bottom: 58px;
+    padding-top: 17px;
+    font-size: 21px;
+    text-align: left;
+    //outline: 1px solid blue;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fullname__title {
+    width: 267px;
+    margin-bottom: 58px;
+    //margin-left: 80px;
     padding-top: 17px;
     font-size: 21px;
     text-align: left;
