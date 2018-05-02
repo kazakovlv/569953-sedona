@@ -6,8 +6,8 @@
 
 @media (min-width: @tablet-width) {
   .fullname {
+    position: relative;
     order: 2;
-    //width: 324px;
     margin: 0;
     padding: 0;
     padding-left: 57px;
@@ -17,10 +17,7 @@
 
 @media (min-width: @desktop-width) {
   .fullname {
-    position: relative;
-    order: 2;
     width: 400px;
-    margin: 0;
     padding: 0 0 0 80px;
     //outline: 1px solid magenta;
   }
@@ -58,7 +55,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 267px;
+    width: 266px;
     height: 56px;
     //margin-left: 20px;
     margin-left: 0;
@@ -130,20 +127,6 @@
   box-sizing: border-box;
 }
 
-/*
-.fullname__field::before {
-  content: "Петр";
-  position: absolute;
-  width: 150px;
-  height: 30px;
-  color: red;
-  left: 10px;
-  top: 10px;
-  outline: 1px solid blue;
-  background-color: red;
-}
-*/
-
 .fullname__divider {
   width: 318px;
   height: 1px;
@@ -155,7 +138,13 @@
 
 @media (min-width: @tablet-width) {
   .fullname__divider {
-    display: none;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 1px;
+    height: 293px;
+    background-color: #e5e5e5;
   }
 }
 
