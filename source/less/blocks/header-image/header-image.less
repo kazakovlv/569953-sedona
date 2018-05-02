@@ -16,37 +16,25 @@
 
 @media (min-width: @tablet-width) {
   .header-image {
-    display: flex;
-    flex-direction: column;
-    /* Не работает в IE11
-    justify-content: flex-end; */
-    align-items: center;
     margin-top: -28px;
     min-width: 768px;
-    min-height: 521px;
-    background-image: url("../img/back-desktop.jpg");
-    background-repeat: no-repeat;
-    background-color: white;
-    background-position: 50% 50%;
-    //outline: 1px solid yellow;
+    min-height: 548px;
+    margin-left: 0 auto;
+    background-image: url("../img/back-desktop-768.jpg");
+    background-size: 768px 518px;
+    background-position-y: 30px;
+    //outline: 1px solid blue;
   }
 }
 
 @media (min-width: @desktop-width) {
   .header-image {
-    display: flex;
-    flex-direction: column;
-    /* Не работает в IE11
-    justify-content: flex-end; */
-    align-items: center;
     margin-top: -28px;
-    min-width: 768px;
-    min-height: 520px;
-    background-image: url("../img/back-desktop.jpg");
-    background-repeat: no-repeat;
-    background-color: white;
-    background-position: 50% 50%;
-    //outline: 1px solid yellow;
+    min-width: 1200px;
+    min-height: 548px;
+    background-image: url("../img/back-desktop-1200.jpg");
+    background-size: 1200px 518px;
+    background-position-y: 30px;
   }
 }
 
@@ -63,10 +51,10 @@
 @media (min-width: @tablet-width) {
   .header-image__text {
     display: block;
-    flex-grow: 1;
+    //flex-grow: 1;
     width: 458px;
     height: 350px;
-    margin-top: 90px;
+    margin-top: 75px;
     padding: 0;
     //outline: 1px solid red;
   }
@@ -78,7 +66,7 @@
     flex-grow: 1;
     width: 470px;
     height: 350px;
-    margin-top: 90px;
+    margin-top: 106px;
     padding: 0;
     //outline: 1px solid red;
   }
@@ -110,4 +98,21 @@
   margin-top: 60px;
   padding: 0;
   //outline: 1px solid green;
+}
+
+@media (min-width: @tablet-width) {
+  .header-image__triangle {
+    width: 768px;
+    height: 57px;
+    margin-top: 3px;
+    //outline: 1px solid green;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header-image__triangle {
+    width: 1200px;
+    margin-top: 32px;
+    //outline: 1px solid green;
+  }
 }

@@ -1,6 +1,9 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   width: 320px;
-  //height: 243px;
   margin: 0 auto;
   padding: 0;
   background-color: white;
@@ -9,13 +12,12 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 648px;
-    //height: 243px;
-    margin: 0 auto;
-    padding: 0;
+    height: 105px;
+    margin-bottom: 15px;
     background-color: white;
     //outline: 1px solid blueviolet;
   }
@@ -28,7 +30,8 @@
 }
 
 .page-footer__header {
-  margin: 0;
+  margin-left: 0 auto;
+  margin-top: 36px;
   padding: 0;
   font-size: 21px;
   line-height: 26px;
@@ -39,12 +42,90 @@
   //outline: 1px solid red;
 }
 
+@media (min-width: @tablet-width) {
+  .page-footer__header {
+    margin-top: 38px;
+    //outline: 1px solid red;
+  }
+}
+
 .page-footer__social {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
   //min-width: 320px;
   //min-height: 243px;
-  margin: 0;
+  margin-top: 13px;
   padding: 0;
   //outline: 1px solid green;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__social {
+    margin-top: 15px;
+    margin-left: -1px;
+    //outline: 1px solid green;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  //align-items: center;
+  width: 140px;
+  height: 40px;
+  //margin-left: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 22px;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__copyright {
+    margin-right: -6px;
+    padding-top: 3px;
+    //margin-top: 0;
+    //outline: 1px solid green;
+  }
+}
+
+.page-footer__copyright-text {
+  display: block;
+  margin: 2px 13px 0 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-style: normal;
+  color: black;
+  text-transform: uppercase;
+  text-align: right;
+  //outline: 1px solid green;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__copyright-text {
+    margin: 3px 12px 0 0;
+    //outline: 1px solid green;
+  }
+}
+
+.page-footer__copyright-link {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.page-footer__copyright-icon:hover {
+  fill: #81b3d2;
+}
+
+.page-footer__copyright-icon:active {
+  fill: #b2b2b2;
+}
+
+.social__link-icon:active {
+  fill: #88b6d1;
+  //fill: red;
 }

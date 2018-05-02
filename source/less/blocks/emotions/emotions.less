@@ -1,6 +1,7 @@
 @media (min-width: @tablet-width) {
   .emotions {
     order: 5;
+    position: relative;
     width: 648px;
     margin: 0;
     padding: 0;
@@ -22,6 +23,7 @@
   width: 242px;
   height: 128px;
   margin-top: 2px;
+  margin-bottom: 2px;
   margin-left: 20px;
   padding: 16px;
   font-size: 18px;
@@ -33,25 +35,52 @@
   //outline: 1px solid magenta;
 }
 
+@media (min-width: @tablet-width) {
+  .emotions__text {
+    width: 606px;
+    height: 126px;
+    margin-top: 102px;
+    margin-bottom: 53px;
+    margin-left: 0;
+    padding: 17px 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotions__text {
+    width: 920px;
+    //outline: 1px solid magenta;
+  }
+}
+
 .emotions__divider {
   min-width: 320px;
   height: 1px;
-  margin-top: -16px;
-  margin-bottom: 5px;
+  margin-top: -13px;
+  margin-bottom: 3px;
   padding: 0;
-  /*background-color: #e5e5e5;*/
-  background-color: red;
+  background-color: #e5e5e5;
+  //background-color: red;
 }
 
 @media (min-width: @tablet-width) {
   .emotions__divider {
-    display: none;
+    position: absolute;
+    top: 33px;
+    width: 648px;
+    margin: 0;
+    //background-color: red;
+    z-index: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .emotions__divider {
-    display: none;
+    top: 33px;
+    width: 960px;
+    //background-color: red;
   }
 }
 
@@ -66,4 +95,32 @@
   color: black;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .emotions__title {
+    position: absolute;
+    width: 398px;
+    left: 125px;
+    margin: 0 auto;
+    padding-top: 21px;
+    font-size: 21px;
+    background-color: white;
+    z-index: 1;
+    //outline: 1px solid magenta;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotions__title {
+    position: absolute;
+    width: 398px;
+    left: 281px;
+    margin: 0 auto;
+    padding-top: 21px;
+    font-size: 21px;
+    background-color: white;
+    z-index: 1;
+    //outline: 1px solid magenta;
+  }
 }

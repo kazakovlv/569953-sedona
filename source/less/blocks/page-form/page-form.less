@@ -1,16 +1,17 @@
-.page-main {
+.page-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-width: 320px;
   min-height: 243px;
+  margin: 0;
   padding: 0;
   //text-transform: uppercase;
   //outline: 1px solid red;
 }
 
 @media (min-width: @tablet-width) {
-  .page-main {
+  .page-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +24,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-main {
+  .page-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,10 +36,10 @@
   }
 }
 
-.page-main__header {
+.page-form__header {
   display: block;
   width: 260px;
-  margin: 38px 30px 10px 30px;
+  margin: 38px 30px 8px 30px;
   padding: 0;
   font-size: 18px;
   line-height: 26px;
@@ -50,13 +51,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-main__header {
+  .page-form__header {
     display: block;
-    width: 450px;
+    width: 440px;
     margin: 0;
-    padding: 50px 30px 5px 30px;
-    font-size: 21px;
-    line-height: 26px;
+    padding: 71px 30px 5px 30px;
+    font-size: 30px;
+    line-height: 34px;
     font-style: bold;
     color: #000000;
     text-transform: uppercase;
@@ -66,18 +67,19 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-main__header {
+  .page-form__header {
+    padding-top: 108px;
     //outline: 1px solid red;
   }
 }
 
-.page-main__note {
+.page-form__note {
   display: block;
   width: 280px;
-  margin: 18px 20px 6px 20px;
+  margin: 18px 20px 17px 20px;
   padding: 0;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 24px;
   font-style: normal;
   color: #333333;
   text-transform: uppercase;
@@ -86,13 +88,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-main__note {
+  .page-form__note {
     display: block;
-    width: 636px;
-    margin: 0;
-    padding: 23px 1px;
+    width: 440px;
+    margin: 0 0 34px 0;
+    padding: 22px 1px;
     font-size: 14px;
-    line-height: 26px;
+    line-height: 24px;
     font-style: normal;
     //letter-spacing: 2px;
     color: #333333;
@@ -103,7 +105,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-main__note {
+  .page-form__note {
+    margin-bottom: 19px;
     //outline: 1px solid yellowgreen;
   }
 }

@@ -1,5 +1,5 @@
 .rating {
-  width: 200px;
+  min-width: 200px;
   margin: 0;
   padding: 0;
 }
@@ -14,13 +14,6 @@
   }
 }
 
-.rating__list {
-  width: 200px;
-  margin-left: 100px;
-  margin-top: 38px;
-  padding: 0;
-}
-
 @media (min-width: @desktop-width) {
   .rating {
     order: 1;
@@ -31,10 +24,39 @@
   }
 }
 
+.rating__list {
+  width: 200px;
+  margin-left: 100px;
+  margin-top: 38px;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .rating__list {
+    width: 200px;
+    margin-left: 75px;
+    margin-top: 73px;
+    //margin: 0;
+    padding: 0;
+    //outline: 1px solid fuchsia;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rating__list {
+    width: 200px;
+    margin-left: 79px;
+    margin-top: 73px;
+    //margin: 0;
+    padding: 0;
+    //outline: 1px solid fuchsia;
+  }
+}
+
 .rating__item {
   display: block;
   position: relative;
-  margin-bottom: 44px;
+  margin-bottom: 43px;
   padding: 0;
   font-size: 18px;
   line-height: 26px;
@@ -43,8 +65,13 @@
   text-transform: none;
   list-style: none;
   cursor: pointer;
-  /*border: 1px solid green;
-  box-sizing: border-box;*/
+}
+
+@media (min-width: @tablet-width) {
+  .rating__item {
+    margin-bottom: 52px;
+    //outline: 1px solid fuchsia;
+  }
 }
 
 .rating__divider {
@@ -52,8 +79,8 @@
   height: 1px;
   margin-top: 28px;
   padding: 0;
-  /*background-color: #e5e5e5;*/
-  background-color: red;
+  background-color: #e5e5e5;
+  //background-color: red;
 }
 
 @media (min-width: @tablet-width) {
@@ -72,11 +99,34 @@
   display: block;
   margin-top: 1px;
   //margin-bottom: 12px;
-  padding-top: 14px;
+  padding-top: 17px;
   font-size: 18px;
   line-height: 26px;
   font-style: bold;
   color: black;
   text-transform: uppercase;
   text-align: center;
+  //outline: 1px solid magenta;
+}
+
+@media (min-width: @tablet-width) {
+  .rating__title {
+    margin-top: 1px;
+    //margin-bottom: 12px;
+    padding-top: 17px;
+    font-size: 21px;
+    text-align: left;
+    //outline: 1px solid magenta;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .rating__title {
+    margin-top: 1px;
+    margin-left: 79px;
+    padding-top: 17px;
+    font-size: 21px;
+    text-align: left;
+    //outline: 1px solid magenta;
+  }
 }
