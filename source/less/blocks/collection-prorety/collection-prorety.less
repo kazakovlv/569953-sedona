@@ -1,6 +1,6 @@
 .collection-prorety {
-  margin: 21px 0 0 0;
-  padding: 0 0 20px 0;
+  margin: 20px 0 0 0;
+  padding: 0 0 22px 0;
   color: black;
   background-color: white;
   //outline: 1px solid blue;
@@ -88,7 +88,7 @@
   margin: 0;
   padding-left: 70px;
   padding-top: 7px;
-  padding-bottom: 18px;
+  padding-bottom: 14px;
   font-size: 14px;
   line-height: 21px;
   font-style: normal;
@@ -130,7 +130,7 @@
   flex-direction: row;
   align-items: flex-start;
   margin: 0;
-  //outline: 1px solid brown;
+  outline: 1px solid blue;
   //background-color: azure;
 }
 
@@ -154,7 +154,7 @@
   //margin-top: 20px;
   padding: 0;
   fill: #81b3d2;
-  //outline: 1px solid brown;
+  outline: 1px solid brown;
 }
 
 @media (min-width: @tablet-width) {
@@ -232,4 +232,82 @@
   .collection-prorety__oder3 {
     order: 3;
   }
+}
+
+.collection-prorety__title-house {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 12px 20px 9px 70px;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: bold;
+  color: #333333;
+  text-transform: uppercase;
+  //outline: 1px solid yellow;
+}
+
+.collection-prorety__title-house::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 37px;
+  background-size: 36px 37px;
+  top: 5px;
+  left: 22px;
+}
+
+.collection-prorety__title-gift {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 12px 20px 9px 70px;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: bold;
+  color: #333333;
+  text-transform: uppercase;
+  //outline: 1px solid yellow;
+}
+
+.collection-prorety__title-gift::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 38px;
+  background-size: 36px 37px;
+  top: 3px;
+  left: 23px;
+}
+
+.collection-prorety__title-burger {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 12px 20px 9px 70px;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: bold;
+  color: #333333;
+  text-transform: uppercase;
+  //outline: 1px solid yellow;
+}
+
+.collection-prorety__title-burger::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 35px;
+  background-size: 36px 37px;
+  top: 7px;
+  left: 20px;
 }
