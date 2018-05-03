@@ -118,7 +118,7 @@
     margin: 0 auto;
     padding-left: 0;
     padding-top: 21px;
-    //padding-bottom: 18px;
+    //padding-bottom: px;
     text-align: center;
     color: #333333;
     //outline: 1px solid brown;
@@ -256,8 +256,38 @@
   width: 36px;
   height: 37px;
   background-size: 36px 37px;
-  top: 5px;
+  top: 4px;
   left: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .collection-prorety__title-house {
+    padding: 160px 0 0 0;
+    font-size: 21px;
+    text-align: center;
+    color: black;
+    //outline: 1px solid yellow;
+  }
+
+  .collection-prorety__title-house::before {
+    width: 76px;
+    height: 73px;
+    background-size: 76px 73px;
+    top: 60px;
+    left: 89px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .collection-prorety__title-house {
+    padding: 159px 0 0 0;
+    //outline: 1px solid yellow;
+  }
+
+  .collection-prorety__title-house::before {
+    top: 58px;
+    left: 159px;
+  }
 }
 
 .collection-prorety__title-gift {
@@ -286,6 +316,36 @@
   left: 23px;
 }
 
+@media (min-width: @tablet-width) {
+  .collection-prorety__title-gift {
+    padding: 160px 0 0 0;
+    font-size: 21px;
+    text-align: center;
+    color: black;
+    //outline: 1px solid yellow;
+  }
+
+  .collection-prorety__title-gift::before {
+    width: 64px;
+    height: 76px;
+    background-size: 64px 76px;
+    top: 56px;
+    left: 93px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .collection-prorety__title-gift {
+    padding: 159px 0 0 0;
+    //outline: 1px solid yellow;
+  }
+
+  .collection-prorety__title-gift::before {
+    top: 55px;
+    left: 166px;
+  }
+}
+
 .collection-prorety__title-burger {
   display: block;
   position: relative;
@@ -310,4 +370,34 @@
   background-size: 36px 37px;
   top: 7px;
   left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .collection-prorety__title-burger {
+    padding: 160px 0 0 0;
+    font-size: 21px;
+    text-align: center;
+    color: black;
+    //outline: 1px solid yellow;
+  }
+
+  .collection-prorety__title-burger::before {
+    width: 76px;
+    height: 73px;
+    background-size: 76px 73px;
+    top: 60px;
+    left: 89px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .collection-prorety__title-burger {
+    padding: 159px 0 0 0;
+    //outline: 1px solid yellow;
+  }
+
+  .collection-prorety__title-burger::before {
+    top: 60px;
+    left: 162px;
+  }
 }
