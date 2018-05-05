@@ -27,11 +27,23 @@
 }
 
 .video-player__picture {
-  min-width: 320px;
+  width: 320px;
   margin: 0;
   padding: 0;
   /*border: 1px solid brown;
   box-sizing: border-box;*/
+}
+
+@media (min-width: @tablet-width) {
+  .video-player__picture {
+    width: 648px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-player__picture {
+    width: 800px;
+  }
 }
 
 .video-player__top-rectangle {
