@@ -161,7 +161,7 @@
 }
 
 .photo-collection__image {
-  //width: 280px;
+  width: 280px;
   //height: 280px;
   margin: 22px 20px 0 20px;
   padding: 0;
@@ -169,6 +169,7 @@
 
 @media (min-width: @tablet-width) {
   .photo-collection__image {
+    width: 324px;
     margin: 0;
     padding: 0;
   }
@@ -176,6 +177,30 @@
 
 @media (min-width: @desktop-width) {
   .photo-collection__image {
+    width: 400px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.photo-collection__image-big {
+  width: 280px;
+  //height: 280px;
+  margin: 22px 20px 0 20px;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-collection__image-big {
+    width: 648px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-collection__image-big {
+    width: 1200px;
     margin: 0;
     padding: 0;
   }
