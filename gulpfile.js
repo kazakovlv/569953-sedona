@@ -69,7 +69,7 @@ gulp.task("sprite", function() {
 });
 
 gulp.task("html", function() {
-  return gulp.src("source/.html")
+  return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
     ]))
@@ -80,8 +80,7 @@ gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
-    "source/*.html"
+    "source/js/**"
   ],{
     base: "source"
   })
