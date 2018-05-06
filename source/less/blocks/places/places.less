@@ -100,7 +100,18 @@
 .places__input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -79px; /* Координаты чекбоксов */
+  left: -79px; //Координаты чекбоксов
+  top: -13px;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+}
+
+.places__input-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  left: -79px;
   top: -13px;
   width: 56px;
   height: 56px;
@@ -110,22 +121,6 @@
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: 16px 20px;
-  //opacity: 0.4;
-}
-
-.places__input-checkbox:checked + label::before {
-  display: none;
-}
-
-.places__input-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  left: -79px; /* Координаты чекбоксов */
-  top: -13px;
-  width: 56px;
-  height: 56px;
-  background-color: #f2f2f2;
-  border-radius: 3px;
 }
 
 .places__divider {
