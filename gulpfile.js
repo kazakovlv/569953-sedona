@@ -13,6 +13,8 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var include = require("posthtml-include");
 var del = require("del");
+var run = require("run-sequence");
+var posthtml = require("gulp-posthtml");
 
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
@@ -30,7 +32,7 @@ gulp.task("style", function() {
 
 gulp.task("serve", function() {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -38,7 +40,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("source/less/**/*.less", ["style"]);
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 
 gulp.task("images", function() {
