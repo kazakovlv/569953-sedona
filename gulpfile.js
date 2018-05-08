@@ -45,11 +45,11 @@ gulp.task("serve", function() {
 });
 
 gulp.task("images", function() {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src(["source/img/**/*.{png,jpg,svg}", "!source/img/icon-*.svg"])
     .pipe(imagemin([
       imagemin.optipng({optimizationlevel: 3}),
       imagemin({progressive: true}),
-      imagemin.svgo()
+      imagemin.svgo({plugins: [{removeViewBox: false}]})
     ]))
     .pipe(gulp.dest("build/img"));
 });
@@ -68,6 +68,9 @@ gulp.task("webp", function() {
 
 gulp.task("sprite", function() {
   return gulp.src("source/img/icon-*.svg")
+    .pipe(imagemin(
+      imagemin.svgo({plugins: [{removeViewBox: false}]}))
+    )
     .pipe(svgstore({
       inlineSvg: true
     }))
