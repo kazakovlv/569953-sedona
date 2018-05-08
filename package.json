@@ -31,6 +31,7 @@
     "build": "gulp build",
     "start": "gulp serve",
     "images": "gulp images",
+    "picturefill": "gulp picturefill",
     "svgo": "gulp svgo",
     "webp": "gulp webp",
     "sprite": "gulp sprite",

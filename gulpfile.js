@@ -93,6 +93,13 @@ gulp.task("copy", function() {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("picturefill", function() {
+  return gulp.src([
+    "node_modules/picturefill/dist/picturefill.min.js"
+  ])
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("clean", function() {
   return del("build");
 });
@@ -122,6 +129,7 @@ gulp.task("build", function(done) {
     "sprite",
     "html",
     "webp",
+    "picturefill",
     done
   );
 });
