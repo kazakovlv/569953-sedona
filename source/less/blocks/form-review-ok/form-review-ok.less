@@ -1,29 +1,28 @@
 .form-review-ok {
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  top: 80px;
-  left: 50%;
+  top: 20px;
+  left: calc(~"50% - " 160px);
   width: 320px;
   height: 323px;
   margin: 0 auto;
   padding: 0;
+  z-index: 120;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   //outline: 1px solid green;
 }
 
 @media (min-width: @tablet-width) {
   .form-review-ok {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     top: 80px;
-    left: 50%;
+    left: calc(~"50% - " 324px);
     width: 648px;
     height: 347px;
-    margin: 0 auto;
-    padding: 0;
     //outline: 1px solid green;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   }
