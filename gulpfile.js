@@ -15,6 +15,7 @@ var include = require("posthtml-include");
 var del = require("del");
 var run = require("run-sequence");
 var posthtml = require("gulp-posthtml");
+var svgo = require('gulp-svgo');
 
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
@@ -44,13 +45,19 @@ gulp.task("serve", function() {
 });
 
 gulp.task("images", function() {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src(["source/img/**/*.{png,jpg,svg}", "!source/img/icon-*.svg"])
     .pipe(imagemin([
       imagemin.optipng({optimizationlevel: 3}),
       imagemin({progressive: true}),
-      imagemin.svgo()
+      imagemin.svgo({plugins: [{removeViewBox: false}]})
     ]))
     .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("svgo", function() {
+  return gulp.src("source/img/*.svg")
+      .pipe(svgo())
+      .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function() {
@@ -61,11 +68,14 @@ gulp.task("webp", function() {
 
 gulp.task("sprite", function() {
   return gulp.src("source/img/icon-*.svg")
+    .pipe(imagemin(
+      imagemin.svgo({plugins: [{removeViewBox: false}]}))
+    )
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("source/tmp"));
 });
 
 gulp.task("html", function() {
@@ -79,7 +89,6 @@ gulp.task("html", function() {
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
     "source/js/**"
   ],{
     base: "source"
@@ -87,18 +96,43 @@ gulp.task("copy", function() {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("picturefill", function() {
+  return gulp.src([
+    "node_modules/picturefill/dist/picturefill.min.js"
+  ])
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("clean", function() {
   return del("build");
 });
+
+/*
+gulp.task("build", function(done) {
+  run(
+    "clean",
+    "copy",
+    "style",
+    "images",
+    "svgo",
+    "sprite",
+    "html",
+    "webp",
+    done
+  );
+});
+*/
 
 gulp.task("build", function(done) {
   run(
     "clean",
     "copy",
     "style",
+    "images",
     "sprite",
     "html",
     "webp",
+    "picturefill",
     done
   );
 });
