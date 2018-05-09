@@ -108,6 +108,15 @@
   border-radius: 3px;
 }
 
+.places__input-checkbox:hover + label::before,
+.places__input-checkbox:focus + label::before {
+  background-color: #e5e5e5;
+}
+
+.places__input-checkbox:active + label::before {
+  background-color: #d5d5d5;
+}
+
 .places__input-checkbox:checked + label::before {
   content: "";
   position: absolute;
