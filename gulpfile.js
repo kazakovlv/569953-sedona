@@ -18,9 +18,9 @@ var posthtml = require("gulp-posthtml");
 var uglify = require("gulp-uglify");
 
 gulp.task("uglify", function () {
-   gulp.src("source/js/scripts.js")
-      .pipe(uglify())
-      .pipe(gulp.dest("build/js")) // It will create folder client.min.js
+  gulp.src("source/js/scripts.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js")) // It will create folder client.min.js
 });
 
 gulp.task("style", function() {
