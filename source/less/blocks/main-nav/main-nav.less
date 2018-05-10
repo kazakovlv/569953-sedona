@@ -279,14 +279,36 @@
 }
 
 
-/*
-.main-nav__item-bottom {
-  border-top: 1px solid #9ac2db;
+@media (min-width: @tablet-width) {
+  .main-nav__item:hover {
+    a {
+      color: #81b3d2;
+    }
+  }
+
+  .main-nav__item:active {
+    a {
+      color: #cacaca;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav__item-bottom {
-    border: none;
+  .main-nav__active {
+    a {
+      color: #766357;
+    }
+  }
+
+  .main-nav__active:hover {
+    a {
+      color: #948a85;
+    }
+  }
+
+  .main-nav__active:active {
+    a {
+      color: #dbd8d5;
+    }
   }
 }
-*/

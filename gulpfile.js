@@ -15,7 +15,13 @@ var include = require("posthtml-include");
 var del = require("del");
 var run = require("run-sequence");
 var posthtml = require("gulp-posthtml");
-var svgo = require('gulp-svgo');
+var uglify = require("gulp-uglify");
+
+gulp.task("uglify", function () {
+  gulp.src("source/js/scripts.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js")) // It will create folder client.min.js
+});
 
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
@@ -40,6 +46,7 @@ gulp.task("serve", function() {
     ui: false
   });
 
+  gulp.watch("source/js/scripts.js", ["uglify"]).on("change", server.reload);
   gulp.watch("source/less/**/*.less", ["style"]);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
@@ -52,12 +59,6 @@ gulp.task("images", function() {
       imagemin.svgo({plugins: [{removeViewBox: false}]})
     ]))
     .pipe(gulp.dest("build/img"));
-});
-
-gulp.task("svgo", function() {
-  return gulp.src("source/img/*.svg")
-      .pipe(svgo())
-      .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function() {
@@ -88,8 +89,7 @@ gulp.task("html", function() {
 
 gulp.task("copy", function() {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/js/**"
+    "source/fonts/**/*.{woff,woff2}"
   ],{
     base: "source"
   })
@@ -107,21 +107,9 @@ gulp.task("clean", function() {
   return del("build");
 });
 
-/*
-gulp.task("build", function(done) {
-  run(
-    "clean",
-    "copy",
-    "style",
-    "images",
-    "svgo",
-    "sprite",
-    "html",
-    "webp",
-    done
-  );
+gulp.task("delstyle", function() {
+  return del("build/css/style.css");
 });
-*/
 
 gulp.task("build", function(done) {
   run(
@@ -133,6 +121,8 @@ gulp.task("build", function(done) {
     "html",
     "webp",
     "picturefill",
+    "uglify",
+    "delstyle",
     done
   );
 });

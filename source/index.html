@@ -16,8 +16,8 @@
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item-top">
-            <a>Главная</a>
+          <li class="main-nav__item main-nav__item-top main-nav__active">
+            <a href="#">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item-left">
             <a href="photo.html">Фото и Видео</a>
@@ -121,11 +121,14 @@
       <section class="page-finish">
         <h2 class="page-finish__title">Заинтересовались?</h2>
         <p class="page-finish__note">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в Седоне</p>
+        <!--<a class="page-finish__reference page-finish__disable" href="#">Найти гостиницу</a>-->
         <a class="page-finish__reference" href="#">Найти гостиницу</a>
         <div class="page-finish__map">
-          <svg width="27px" height="27px">
+          <!--<iframe src="https://yandex.ru/map-widget/v1/-/CBqGU2e99B" width="320" height="350" frameborder="0"></iframe>-->
+          <!--<svg width="27px" height="27px">
             <use xlink:href="#icon-map-marker"></use>
-          </svg>
+          </svg>-->
+          <iframe class="page-finish__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52370.78079585669!2d-111.78140603934851!3d34.8769793586122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1525941894733" width="320" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </section>
     </main>
@@ -176,19 +179,6 @@
         </a>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector(".main-nav");
-      var navToggle = document.querySelector(".main-nav__toggle");
-      navMain.classList.remove("main-nav--nojs");
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains("main-nav--closed")) {
-          navMain.classList.remove("main-nav--closed");
-          navMain.classList.add("main-nav--opened");
-        } else {
-          navMain.classList.add("main-nav--closed");
-          navMain.classList.remove("main-nav--opened");
-        }
-      });
-    </script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
