@@ -120,46 +120,59 @@
   align-items: center;
   width: 320px;
   height: 350px;
-  //margin: 0 auto;
-  //margin-bottom: 10px;
   padding: 0;
-  background-image: url("../img/bg-map-mobile@1x.jpg");
-  background-repeat: no-repeat;
   background-color: #f0f2e8;
+  /*background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 320px 350px;
   //outline: 1px solid yellowgreen;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
-  }
+  }*/
 }
 
 @media (min-width: @tablet-width) {
   .page-finish__map {
     width: 768px;
-    background-image: url("../img/bg-map-tablet@1x.jpg");
+    height: 350px;
+    /*background-image: url("../img/bg-map-tablet@1x.jpg");
     background-size: 768px 350px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
-    }
+    }*/
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-finish__map {
     width: 1200px;
-    background-image: url("../img/bg-map-desktop@1x.jpg");
+    /*background-image: url("../img/bg-map-desktop@1x.jpg");
     background-size: 1200px 350px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");
-    }
+    }*/
   }
 }
 
-.page-finish__marker {
-  //position: relative;
-  //margin: 161px 147px;
+.page-finish__google-map {
+  width: 320px;
+  height: 350px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-finish__google-map {
+    width: 768px;
+    height: 350px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-finish__google-map {
+    width: 1200px;
+    height: 350px;
+  }
 }
