@@ -16,6 +16,7 @@ var del = require("del");
 var run = require("run-sequence");
 var posthtml = require("gulp-posthtml");
 var uglify = require("gulp-uglify");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("uglify", function () {
   gulp.src("source/js/scripts.js")
@@ -84,6 +85,7 @@ gulp.task("html", function() {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 

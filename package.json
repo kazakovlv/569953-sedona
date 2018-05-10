@@ -9,6 +9,7 @@
     "browser-sync": "^2.23.7",
     "gulp": "3.9.x",
     "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-jshint": "^2.1.0",
     "gulp-less": "3.5.x",
@@ -41,6 +42,7 @@
     "copy": "gulp copy",
     "style": "gulp style",
     "delstyle": "gulp delstyle",
+    "htmlmin": "gulp-htmlmin",
     "clean": "gulp clean"
   },
   "browserslist": [
