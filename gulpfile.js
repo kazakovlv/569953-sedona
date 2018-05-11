@@ -19,7 +19,7 @@ var uglify = require("gulp-uglify");
 var htmlmin = require("gulp-htmlmin");
 
 gulp.task("uglify", function () {
-  gulp.src("source/js/scripts.js")
+  gulp.src("source/js/*.js")
     .pipe(uglify())
     .pipe(gulp.dest("build/js")) // It will create folder client.min.js
 });
@@ -47,7 +47,7 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.watch("source/js/scripts.js", ["uglify"]).on("change", server.reload);
+  gulp.watch("source/js/*.js", ["uglify"]).on("change", server.reload);
   gulp.watch("source/less/**/*.less", ["style"]);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
