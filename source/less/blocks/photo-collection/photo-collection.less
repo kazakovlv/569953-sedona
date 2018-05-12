@@ -288,6 +288,18 @@
 .photo-collection__button {
   margin: 0;
   padding: 0;
+  background-color: transparent;
+  border: 0;
+
+  svg {
+    fill: #b2b2b2;
+  }
+}
+
+.photo-collection__button:active {
+  svg {
+    fill: black;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -301,7 +313,16 @@
   .photo-collection__button {
     margin-right: 11px;
     padding: 0;
-    fill: white;
+
+    svg {
+      fill: white;
+    }
+  }
+
+  .photo-collection__button:active {
+    svg {
+      fill: #949494;
+    }
   }
 }
 
