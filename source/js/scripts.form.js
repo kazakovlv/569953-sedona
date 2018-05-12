@@ -27,7 +27,6 @@ FormReview.addEventListener("submit", function (evt) {
         formError.classList.remove("visually-hidden");
         UserPhone.focus();
       } else {
-        //evt.preventDefault();
         formOK.classList.remove("visually-hidden");
       }
     }

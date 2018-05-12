@@ -44,119 +44,119 @@
       </div>
     </header>
     <main class="page-form">
-        <h1 class="page-form__header">Оставьте свой отзыв</h1>
-        <p class="page-form__note">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        <form class="review" action="https://echo.htmlacademy.ru" method="post">
-          <div class="fullname">
-            <div class="fullname__divider"></div>
-            <h2 class="fullname__title">Представьтесь:</h2>
-            <ul>
-              <li class="fullname__item">
-                <span class="fullname__container-label">
-                  <label class="fullname__label" for="id-first-name">Имя*:</label>
-                </span>
-                <div class="fullname__container-input">
-                  <input class="fullname__field" type="text" name="user-first" id="id-first-name" placeholder="Петр">
+      <h1 class="page-form__header">Оставьте свой отзыв</h1>
+      <p class="page-form__note">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="review" action="https://echo.htmlacademy.ru" method="post">
+        <div class="fullname">
+          <div class="fullname__divider"></div>
+          <h2 class="fullname__title">Представьтесь:</h2>
+          <ul>
+            <li class="fullname__item">
+              <span class="fullname__container-label">
+                <label class="fullname__label" for="id-first-name">Имя*:</label>
+              </span>
+              <div class="fullname__container-input">
+                <input class="fullname__field" type="text" name="user-first" id="id-first-name" placeholder="Петр">
+              </div>
+            </li>
+            <li class="fullname__item">
+              <span class="fullname__container-label">
+                <label class="fullname__label" for="id-last-name">Фамилия*:</label>
+              </span>
+              <div class="fullname__container-input">
+                <input class="fullname__field" type="text" name="user-last" id="id-last-name" placeholder="Иванов">
+              </div>
+            </li>
+            <li class="fullname__item">
+              <span class="fullname__container-label">
+                <label class="fullname__label" for="id-middle-name">Отчество:</label>
+              </span>
+              <div class="fullname__container-input">
+                <input class="fullname__field" type="text" name="user-middle" id="id-middle-name" placeholder="Александрович">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <div class="contacts__divider"></div>
+          <h2 class="contacts__title">Контактная информация:</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <label class="contacts__label" for="id-phone"><span class="contacts__label-hide">Контактный&nbsp;</span>телефон*:</label>
+              <div class="contacts__field-block">
+                <div class="contacts__field-container">
+                  <input class="contacts__field" type="tel" pattern="8[0-9]{10}" name="user-phone" id="id-phone" placeholder="Введите телефон">
                 </div>
-              </li>
-              <li class="fullname__item">
-                <span class="fullname__container-label">
-                  <label class="fullname__label" for="id-last-name">Фамилия*:</label>
-                </span>
-                <div class="fullname__container-input">
-                  <input class="fullname__field" type="text" name="user-last" id="id-last-name" placeholder="Иванов">
+                <div class="contacts__image-container">
+                  <svg class="contacts__image" width="18px" height="18px">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
                 </div>
-              </li>
-              <li class="fullname__item">
-                <span class="fullname__container-label">
-                  <label class="fullname__label" for="id-middle-name">Отчество:</label>
-                </span>
-                <div class="fullname__container-input">
-                  <input class="fullname__field" type="text" name="user-middle" id="id-middle-name" placeholder="Александрович">
+              </div>
+            </li>
+            <li class="contacts__item">
+              <label class="contacts__label" for="id-email">Электронная почта:</label>
+              <div class="contacts__field-block">
+                <div class="contacts__field-container">
+                  <input class="contacts__field" type="email" name="user-email" id="id-email" placeholder="Введите e-mail">
                 </div>
-              </li>
-            </ul>
-          </div>
-          <div class="contacts">
-            <div class="contacts__divider"></div>
-            <h2 class="contacts__title">Контактная информация:</h2>
-            <ul class="contacts__list">
-              <li class="contacts__item">
-                <label class="contacts__label" for="id-phone"><span class="contacts__label-hide">Контактный&nbsp;</span>телефон*:</label>
-                <div class="contacts__field-block">
-                  <div class="contacts__field-container">
-                    <input class="contacts__field" type="tel" pattern="8[0-9]{10}" name="user-phone" id="id-phone" placeholder="Введите телефон">
-                  </div>
-                  <div class="contacts__image-container">
-                    <svg class="contacts__image" width="18px" height="18px">
-                      <use xlink:href="#icon-phone"></use>
-                    </svg>
-                  </div>
+                <div class="contacts__image-container">
+                  <svg class="contacts__image" width="16px" height="16px">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
                 </div>
-              </li>
-              <li class="contacts__item">
-                <label class="contacts__label" for="id-email">Электронная почта:</label>
-                <div class="contacts__field-block">
-                  <div class="contacts__field-container">
-                    <input class="contacts__field" type="email" name="user-email" id="id-email" placeholder="Введите e-mail">
-                  </div>
-                  <div class="contacts__image-container">
-                    <svg class="contacts__image" width="16px" height="16px">
-                      <use xlink:href="#icon-mail"></use>
-                    </svg>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="rating">
-            <div class="rating__divider"></div>
-            <h2 class="rating__title">Ваше общее впечатление:</h2>
-            <ul class="rating__list">
-              <li class="rating__item">
-                <input class="visually-hidden input-radio" type="radio" name="radio-value" id="id-radio-value-plus" value="value-plus" checked>
-                <label for="id-radio-value-plus">Скорее положительное</label>
-              </li>
-              <li class="rating__item">
-                <input class="visually-hidden input-radio" type="radio" name="radio-value" id="id-radio-value-minus" value="value-minus">
-                <label for="id-radio-value-minus">Скорее отрицательное</label>
-              </li>
-              <li class="rating__item">
-                <input class="visually-hidden input-radio" type="radio" name="radio-value" id="id-radio-value-ziro" value="value-ziro">
-                <label for="id-radio-value-ziro">Затрудняюсь ответить</label>
-              </li>
-              </ul>
-          </div>
-          <div class="places">
-            <div class="places__divider"></div>
-            <h2 class="places__title">Посещенные достопримечательности:</h2>
-            <ul class="places__list">
-              <li class="places__item">
-                <input class="visually-hidden places__input-checkbox" type="checkbox" name="places-bridge" id="id-places-bridge" checked>
-                <label for="id-places-bridge">Мост Дьявола</label>
-              </li>
-              <li class="places__item">
-                <input class="visually-hidden places__input-checkbox" type="checkbox" name="places-mount" id="id-places-mount" checked>
-                <label for="id-places-mount">Гора-Колокол</label>
-              </li>
-              <li class="places__item">
-                <input class="visually-hidden places__input-checkbox" type="checkbox" name="places-park" id="id-places-park" checked>
-                <label for="id-places-park">Слайд-парк</label>
-              </li>
-              <li class="places__item">
-                <input class="visually-hidden places__input-checkbox" type="checkbox" name="places-red" id="id-places-red">
-                <label for="id-places-red">Красные скалы</label>
-              </li>
-            </ul>
-          </div>
-          <div class="emotions">
-            <div class="emotions__divider"></div>
-            <label for="id-message" class="emotions__title">Опишите свои эмоции:</label>
-            <textarea class="emotions__text" name="message" id="id-message" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
-          </div>
-          <input type="submit" class="review__send" value="Отправить отзыв">
-          <p class="review__notify">* &mdash; Обязательные поля</p>
-        </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="rating">
+          <div class="rating__divider"></div>
+          <h2 class="rating__title">Ваше общее впечатление:</h2>
+          <ul class="rating__list">
+            <li class="rating__item">
+              <input class="visually-hidden input-radio" type="radio" name="radio-value" id="id-radio-value-plus" value="value-plus" checked>
+              <label for="id-radio-value-plus">Скорее положительное</label>
+            </li>
+            <li class="rating__item">
+              <input class="visually-hidden input-radio" type="radio" name="radio-value" id="id-radio-value-minus" value="value-minus">
+              <label for="id-radio-value-minus">Скорее отрицательное</label>
+            </li>
+            <li class="rating__item">
+              <input class="visually-hidden input-radio" type="radio" name="radio-value" id="id-radio-value-ziro" value="value-ziro">
+              <label for="id-radio-value-ziro">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </div>
+        <div class="places">
+          <div class="places__divider"></div>
+          <h2 class="places__title">Посещенные достопримечательности:</h2>
+          <ul class="places__list">
+            <li class="places__item">
+              <input class="visually-hidden places__input-checkbox" type="checkbox" name="places-bridge" id="id-places-bridge" checked>
+              <label for="id-places-bridge">Мост Дьявола</label>
+            </li>
+            <li class="places__item">
+              <input class="visually-hidden places__input-checkbox" type="checkbox" name="places-mount" id="id-places-mount" checked>
+              <label for="id-places-mount">Гора-Колокол</label>
+            </li>
+            <li class="places__item">
+              <input class="visually-hidden places__input-checkbox" type="checkbox" name="places-park" id="id-places-park" checked>
+              <label for="id-places-park">Слайд-парк</label>
+            </li>
+            <li class="places__item">
+              <input class="visually-hidden places__input-checkbox" type="checkbox" name="places-red" id="id-places-red">
+              <label for="id-places-red">Красные скалы</label>
+            </li>
+          </ul>
+        </div>
+        <div class="emotions">
+          <div class="emotions__divider"></div>
+          <label for="id-message" class="emotions__title">Опишите свои эмоции:</label>
+          <textarea class="emotions__text" name="message" id="id-message" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+        </div>
+        <input type="submit" class="review__send" value="Отправить отзыв">
+        <p class="review__notify">* &mdash; Обязательные поля</p>
+      </form>
     </main>
     <footer class="page-footer">
       <p class="page-footer__header">#VISITSEDONA</p>

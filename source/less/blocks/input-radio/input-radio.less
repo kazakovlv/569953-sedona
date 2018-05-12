@@ -1,13 +1,12 @@
 .input-radio + label::before {
   content: "";
   position: absolute;
-  left: -79px; /* Координаты радиокнопок */
+  left: -79px;
   top: -13px;
   width: 56px;
   height: 56px;
   background-color: #f2f2f2;
   border-radius: 50%;
-  //outline: 1px solid fuchsia;
 }
 
 .input-radio:hover + label::before,
@@ -24,7 +23,7 @@
 .input-radio:checked + label::after {
   content: "";
   position: absolute;
-  left: -62px; /* Координаты точек в радиокнопке */
+  left: -62px;
   top: 3px;
   width: 22px;
   height: 22px;
@@ -45,19 +44,17 @@
 
 @media (min-width: @tablet-width) {
   .input-radio + label::before {
-    left: -75px; /* Координаты радиокнопок */
-    //outline: 1px solid fuchsia;
+    left: -75px;
   }
 
   .input-radio:checked + label::after {
     content: "";
-    left: -58px; /* Координаты точек в радиокнопке */
-    //outline: 1px solid fuchsia;
+    left: -58px;
   }
 
   .input-radio:checked:focus + label::after,
   .input-radio:checked:hover + label::after {
     content: "";
-    left: -58px;/* Координаты точек в радиокнопке */
+    left: -58px;
   }
 }
