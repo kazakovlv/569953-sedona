@@ -7,7 +7,6 @@
   margin-top: 34px;
   margin-bottom: 39px;
   padding: 0;
-  //outline: 1px solid blue;
 }
 
 @media (min-width: @tablet-width) {
@@ -17,6 +16,15 @@
     min-height: 500px;
     margin-top: 72px;
     margin-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-player {
+    width: 800px;
+    height: 500px;
+    margin-top: 70px;
+    margin-bottom: 85px;
     //outline: 1px solid blue;
   }
 }
@@ -55,15 +63,15 @@
   .video-player__driver {
     margin: 0;
     padding: 0;
-    margin-top: -97px;
-    flex-wrap: nowrap;
+    margin-top: -96px;
+    //flex-wrap: nowrap;
     justify-content: flex-start;
     width: 648px;
     height: 93px;
-    //background-color: black;
-    //opacity: 0.6;
-    background-color: hsla(0, 0%, 0%, 0.6);
-    outline: 1px solid red;
+    background-color: black;
+    opacity: 0.6;
+    //background-color: hsla(0, 0%, 0%, 0.6);
+    //outline: 1px solid red;
   }
 }
 
@@ -82,9 +90,12 @@
     margin: 0;
     padding: 0;
     width: 389px;
-    height: 12px;
-    background-color: transparent;
-    outline: 1px solid red;
+    height: 93px;
+    margin-left: 40px;
+    //margin-bottom: -96px;
+    background-color: hsla(0, 0%, 0%, 0.6);
+    //background-color: transparent;
+    //outline: 1px solid red;
   }
 }
 
@@ -108,7 +119,6 @@
   width: 235px;
   height: 3px;
   opacity: 0.2;
-  z-index: 35;
   background-color: white;
   //outline: 1px solid red;
 }
@@ -116,7 +126,7 @@
 @media (min-width: @tablet-width) {
   .video-player__scale {
     left: 0;
-    top: 5px;
+    top: 45px;
     width: 389px;
   }
 }
@@ -134,8 +144,8 @@
 
 @media (min-width: @tablet-width) {
   .video-player__slider {
-    left: 205px;
-    top: 0;
+    left: 114px;
+    top: 41px;
   }
 }
 
@@ -168,9 +178,14 @@
     order: 1;
     margin: 0;
     padding: 0;
+    margin-left: 35px;
+    //height: 93px;
+    //width: 60px;
+    //background-color: hsla(0, 0%, 0%, 0.6);
 
     svg {
       fill: white;
+      //background-color: hsla(0, 0%, 0%, 0.6);
     }
   }
 
@@ -215,6 +230,7 @@
     order: 3;
     margin: 0;
     padding: 0;
+    margin-left: 44px;
 
     svg {
       fill: white;
@@ -262,6 +278,7 @@
     order: 4;
     margin: 0;
     padding: 0;
+    margin-left: 31px;
 
     svg {
       fill: white;
