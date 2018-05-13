@@ -7,8 +7,6 @@
   .fullname {
     position: relative;
     order: 2;
-    margin: 0;
-    padding: 0;
     padding-left: 57px;
   }
 }
@@ -44,29 +42,14 @@
 
 @media (min-width: @tablet-width) {
   .fullname__item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 266px;
-    height: 56px;
     margin-left: 0;
-    margin-top: 22px;
-    padding: 0;
-    list-style: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .fullname__item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 400px;
-    height: 56px;
-    margin-left: 0;
-    margin-top: 22px;
-    padding: 0;
-    list-style: none;
   }
 }
 
@@ -96,10 +79,11 @@
 }
 
 .fullname__field {
+  box-sizing: border-box;
   width: 100%;
   height: 58px;
   margin-right: 20px;
-  padding-left: 16px;
+  padding-left: 18px;
   font-family: "PT Sans", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -108,8 +92,7 @@
   color: black;
   outline: none;
   background-color: #f2f2f2;
-  border: 5px solid #f2f2f2;
-  box-sizing: border-box;
+  border: 4px solid #f2f2f2;
 }
 
 .fullname__field::placeholder {
@@ -121,16 +104,35 @@
 
 .fullname__field:hover {
   background-color: #e5e5e5;
-  border: 5px solid #e5e5e5;
+  border: 4px solid #e5e5e5;
 }
 
 .fullname__field:focus,
 .fullname__field:active {
-  color: #000000;
   background-color: #ffffff;
   border-color: #f2f2f2;
 }
 
+.fullname::before {
+  content: "";
+  display: block;
+  width: 318px;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+@media (min-width: @tablet-width) {
+  .fullname::before {
+    position: absolute;
+    left: 0;
+    top: 22px;
+    width: 1px;
+    height: 293px;
+    background-color: #e5e5e5;
+  }
+}
+
+/*
 .fullname__divider {
   width: 318px;
   height: 1px;
@@ -162,7 +164,7 @@
     background-color: #e5e5e5;
   }
 }
-
+*/
 .fullname__title {
   display: block;
   margin-top: 1px;
@@ -189,7 +191,6 @@
   .fullname__title {
     width: 267px;
     margin-bottom: 58px;
-    padding-top: 17px;
     font-size: 21px;
     text-align: left;
   }

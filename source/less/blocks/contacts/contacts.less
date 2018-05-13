@@ -151,7 +151,6 @@
 .contacts__field::placeholder {
   font-family: "PT Sans", "Calibri", sans-serif;
   font-size: 18px;
-  line-height: 26px;
   font-weight: bold;
   color: black;
   text-transform: none;
@@ -186,6 +185,29 @@
   right: 0;
 }
 
+.contacts::before {
+  content: "";
+  display: block;
+  width: 320px;
+  height: 1px;
+  margin-top: 26px;
+  padding: 0;
+  background-color: #e5e5e5;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts::before {
+    position: absolute;
+    top: 45px;
+    width: 648px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+    z-index: 0;
+  }
+}
+/*
 .contacts__divider {
   min-width: 320px;
   height: 1px;
@@ -206,7 +228,7 @@
     z-index: 0;
   }
 }
-
+*/
 @media (min-width: @desktop-width) {
   .contacts__divider {
     width: 960px;

@@ -67,6 +67,23 @@
   }
 }
 
+.rating::before {
+  content: "";
+  display: block;
+  min-width: 320px;
+  height: 1px;
+  margin-top: 28px;
+  padding: 0;
+  background-color: #e5e5e5;
+}
+
+@media (min-width: @tablet-width) {
+  .rating::before {
+    display: none;
+  }
+}
+
+/*
 .rating__divider {
   min-width: 320px;
   height: 1px;
@@ -80,13 +97,7 @@
     display: none;
   }
 }
-
-@media (min-width: @desktop-width) {
-  .rating__divider {
-    display: none;
-  }
-}
-
+*/
 .rating__title {
   display: block;
   margin-top: 1px;
