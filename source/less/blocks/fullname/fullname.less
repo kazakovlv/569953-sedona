@@ -100,6 +100,8 @@
   height: 58px;
   margin-right: 20px;
   padding-left: 16px;
+  //padding-top: 16px;
+  font-family: "PT Sans", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -109,6 +111,40 @@
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   box-sizing: border-box;
+}
+
+.fullname__field::placeholder {
+  font-family: "PT Sans", "Calibri", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: black;
+  text-transform: none;
+}
+
+.fullname__field::-moz-placeholder {
+  font-family: "PT Sans", "Calibri", sans-serif;
+  height: 26px;
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: bold;
+  color: black;
+  text-transform: none;
+}
+
+.fullname__field:active::-moz-placeholder {
+  line-height: 26px;
+}
+
+.fullname__field:hover {
+  background-color: #e5e5e5;
+}
+
+.fullname__field:focus,
+.fullname__field:active {
+  color: #000000;
+  background-color: #ffffff;
+  border: 5px solid #e5e5e5;
 }
 
 .fullname__divider {
@@ -173,16 +209,4 @@
     font-size: 21px;
     text-align: left;
   }
-}
-
-
-.fullname__field:hover {
-  background-color: #e5e5e5;
-}
-
-.fullname__field:focus,
-.fullname__field:active {
-  color: #000000;
-  background-color: #ffffff;
-  border: 5px solid #e5e5e5;
 }
