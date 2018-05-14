@@ -55,45 +55,46 @@
   flex-grow: 1;
   width: 229px;
   height: 39px;
-  margin-top: 33px;
+  margin-top: 10px;
 }
 
 @media (min-width: @tablet-width) {
   .header-image-nomain__text {
     display: block;
     flex-grow: 1;
-    width: 461px;
-    height: 80px;
-    margin-top: 41px;
+    width: 457px;
+    height: 79px;
+    margin-top: 37px;
     padding: 0;
   }
 }
 
-.header-image-nomain__triangle {
+.header-image-nomain::after {
+  content: "";
   display: block;
   width: 320px;
   height: 26px;
-  margin-top: 20px;
+  margin: 0;
   padding: 0;
   background-image: url("../img/bg-intro-triangle-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  //outline: 1px solid red;
 }
 
 @media (min-width: @tablet-width) {
-  .header-image-nomain__triangle {
+  .header-image-nomain::after {
     width: 768px;
     height: 57px;
-    margin-top: 3px;
+    //margin-top: 3px;
     background-image: url("../img/bg-intro-triangle-tablet.svg");
   }
 }
 
 @media (min-width: @desktop-width) {
-  .header-image-nomain__triangle {
+  .header-image-nomain::after {
     width: 1200px;
-    height: 57px;
-    margin-top: 0;
+    //margin-top: 32px;
     background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
 }
