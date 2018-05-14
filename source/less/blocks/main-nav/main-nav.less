@@ -120,7 +120,8 @@
     background-color: #5496bd;
 
     a {
-      color: #94b9d2;
+      color: white;
+      opacity: 0.3;
     }
   }
 }
@@ -265,7 +266,8 @@
 
   .main-nav__item:active {
     a {
-      color: #cacaca;
+      color: #000000;
+      opacity: 0.3;
     }
   }
 }
@@ -279,13 +281,27 @@
 
   .main-nav__item--active:hover {
     a {
-      color: #948a85;
+      color: #604e43;
     }
   }
 
   .main-nav__item--active:active {
     a {
-      color: #dbd8d5;
+      color: #766357;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .main-nav__item--disable:active,
+  .main-nav__item--disable:hover,
+  .main-nav__item--disable {
+    background-color: #e5e5e5;
+
+    a {
+      color: #ffffff;
+      opacity: 1;
     }
   }
 }
