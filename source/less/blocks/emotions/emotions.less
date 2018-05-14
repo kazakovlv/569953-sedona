@@ -18,19 +18,32 @@
 }
 
 .emotions__text {
-  width: 260px;
-  height: 144px;
+  width: 250px;
+  height: 140px;
   margin: 18px 0 0 20px;
-  padding: 16px 0 0 20px;
+  padding: 11px 0 0 20px;
   font-family: "PT Sans", "Calibri", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: black;
   text-transform: none;
+  outline: none;
   background-color: #f2f2f2;
+  border: 4px solid #f2f2f2;
   resize: vertical;
-  border: none;
+}
+
+.emotions__text:hover {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.emotions__text:focus,
+.emotions__text:active {
+  color: #000000;
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
 }
 
 .emotions__text::placeholder {
@@ -91,7 +104,7 @@
 .emotions__title {
   display: block;
   margin-top: 1px;
-  padding-top: 14px;
+  padding-top: 15px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
