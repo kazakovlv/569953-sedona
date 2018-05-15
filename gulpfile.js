@@ -21,7 +21,7 @@ var htmlmin = require("gulp-htmlmin");
 gulp.task("uglify", function () {
   gulp.src("source/js/*.js")
     .pipe(uglify())
-    .pipe(gulp.dest("build/js")) // It will create folder client.min.js
+    .pipe(gulp.dest("build/js"))
 });
 
 gulp.task("style", function() {

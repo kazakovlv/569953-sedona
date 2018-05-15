@@ -1,10 +1,9 @@
 var navMain = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".main-nav__toggle");
-var sendButton = document.querySelector(".review__send");
 var formOK = document.querySelector(".form-review-ok");
 var formError = document.querySelector(".form-review-error");
-var ButtonOK =  document.querySelector(".review-ok-button");
-var ButtonError =  document.querySelector(".review-error-button");
+var ButtonOK =  document.querySelector(".button-type-submit--ok");
+var ButtonError =  document.querySelector(".button-type-submit--error");
 var FormReview = document.querySelector(".review");
 var UserName =  FormReview.querySelector("[name=user-first]");
 var UserFamily =  FormReview.querySelector("[name=user-last]");
@@ -27,6 +26,7 @@ FormReview.addEventListener("submit", function (evt) {
         formError.classList.remove("visually-hidden");
         UserPhone.focus();
       } else {
+        evt.preventDefault();
         formOK.classList.remove("visually-hidden");
       }
     }
