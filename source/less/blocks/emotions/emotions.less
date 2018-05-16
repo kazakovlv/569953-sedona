@@ -1,7 +1,12 @@
+.emotions {
+  position: relative;
+  margin-top: -13px;
+  padding: 0;
+}
+
 @media (min-width: @tablet-width) {
   .emotions {
     order: 5;
-    position: relative;
     width: 648px;
     margin: 0;
     padding: 0;
@@ -14,6 +19,32 @@
     width: 960px;
     margin: 0;
     padding: 0;
+  }
+}
+
+.emotions::before {
+  content: "";
+  position: absolute;
+  min-width: 320px;
+  height: 1px;
+  top: 0;
+  left: 0;
+  padding: 0;
+  background-color: #e5e5e5;
+}
+
+@media (min-width: @tablet-width) {
+  .emotions::before {
+    top: 33px;
+    width: 648px;
+    margin: 0;
+    z-index: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotions::before {
+    width: 960px;
   }
 }
 
@@ -58,8 +89,8 @@
 
 @media (min-width: @tablet-width) {
   .emotions__text {
-    width: 606px;
-    height: 126px;
+    width: 600px;
+    height: 120px;
     margin-top: 102px;
     margin-bottom: 53px;
     margin-left: 0;
@@ -69,40 +100,13 @@
 
 @media (min-width: @desktop-width) {
   .emotions__text {
-    width: 920px;
-  }
-}
-
-.emotions__divider {
-  min-width: 320px;
-  height: 1px;
-  margin-top: -13px;
-  margin-bottom: 3px;
-  padding: 0;
-  background-color: #e5e5e5;
-}
-
-@media (min-width: @tablet-width) {
-  .emotions__divider {
-    position: absolute;
-    top: 33px;
-    width: 648px;
-    margin: 0;
-    z-index: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .emotions__divider {
-    top: 33px;
-    width: 960px;
+    width: 912px;
   }
 }
 
 .emotions__title {
   display: block;
-  margin-top: 1px;
-  padding-top: 15px;
+  padding-top: 19px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -116,8 +120,7 @@
     position: absolute;
     width: 398px;
     left: 125px;
-    margin: 0 auto;
-    padding-top: 21px;
+    top: 2px;
     font-size: 21px;
     background-color: white;
     z-index: 1;
@@ -126,13 +129,7 @@
 
 @media (min-width: @desktop-width) {
   .emotions__title {
-    position: absolute;
-    width: 398px;
     left: 281px;
     margin: 0 auto;
-    padding-top: 21px;
-    font-size: 21px;
-    background-color: white;
-    z-index: 1;
   }
 }
