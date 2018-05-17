@@ -9,6 +9,7 @@
   .collection-prorety {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: @tablet-width;
     margin: 0;
     padding: 0;
@@ -21,10 +22,8 @@
   .collection-prorety {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     width: @desktop-width;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 67px;
     color: black;
     background-color: white;
   }
@@ -41,6 +40,7 @@
   .collection-prorety__item {
     display: block;
     width: 256px;
+    height: auto;
     min-height: 330px;
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@
 @media (min-width: @desktop-width) {
   .collection-prorety__item {
     width: 400px;
-    height: 256px;
+    min-height: 256px;
     margin: 0;
     padding: 0;
   }
