@@ -9,13 +9,16 @@
 }
 
 .social__item {
+  display: table;
   margin: 3px;
 }
 
 .social__link {
-  display: flex;
-  min-width: 46px;
-  min-height: 48px;
+  display: table-cell;
+  width: 46px;
+  height: 48px;
+  vertical-align: middle;
+  text-align: center;
   fill: hsl(0, 0%, 100%);
   background-color: hsl(202, 47%, 66%);
 }
@@ -29,18 +32,7 @@
   fill: hsla(0, 0%, 100%, 0.3);
 }
 
-.social__link-icon {
-  margin: auto;
-}
-
-.social__link-icon--twitter {
-  margin-top: 16px;
-}
-
-.social__link-icon--facebook {
-  margin-top: 14px;
-}
-
-.social__link-icon--youtube {
-  margin-top: 17px;
+.social__link:focus {
+  outline: none;
+  box-shadow: 0 0 6px 2px hsl(25, 68%, 50%);
 }
